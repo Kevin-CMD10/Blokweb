@@ -16,14 +16,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 <summary>uitwerken voor kick-off werkgroep</summary>
 
 ### Auteur:
-Sanne 't Hooft (vervangen door jouw naam)
+Kevin Speek
 
 #### Je startniveau:
-hier je startniveau (kies uit zwart, rood óf blauw)
+Ik denk zelf dat ik op de rode piste zit, omdat ik code ook weer niet onwijs lastig vind (de basis dan). Het is ook niet zo dat ik er onwijs goed in ben, maar als eenmaal bepaalde dingen lukken dan is het natuurlijk tof. 
 
 #### Je focus:
-hier je focus (kies uit responsive óf surface plane)
- 
+Ik ga mezelf focussen op zowel responsive als de surface. Ik wil dat mijn website sowieso bruikbaar is op een telefoon en laptop. 
+
 </details>
 
 
@@ -36,15 +36,15 @@ hier je focus (kies uit responsive óf surface plane)
 <summary>uitwerken voor kick-off werkgroep</summary>
 
 ### Je opdracht:
-link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
+https://www.nike.com/nl/
 
 #### Screenshot(s) van de eerste pagina (small screen): 
 hier de naam van de pagina  
-<img src="images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+<img src="images/Nike_home.jpeg" width="375px" alt="Homepagina van Nike">
 
 #### Screenshot(s) van de tweede pagina (small screen):
 hier de naam van de pagina  
-<img src="images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+<img src="images/Nike_bestellingen.jpeg" width="375px" alt="Bestellingen pagina van Nike">
  
 </details>
 
