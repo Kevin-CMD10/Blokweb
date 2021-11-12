@@ -39,11 +39,11 @@ Ik ga mezelf focussen op zowel responsive als de surface. Ik wil dat mijn websit
 https://www.nike.com/nl/
 
 #### Screenshot(s) van de eerste pagina (small screen): 
-hier de naam van de pagina  
+Homepagina Nike 
 <img src="images/Nike_home.jpeg" width="375px" alt="Homepagina van Nike">
 
 #### Screenshot(s) van de tweede pagina (small screen):
-hier de naam van de pagina  
+Bestelpagina Nike
 <img src="images/Nike_bestellingen.jpeg" width="375px" alt="Bestellingen pagina van Nike">
  
 </details>
