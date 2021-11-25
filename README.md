@@ -76,7 +76,7 @@ Bestelpagina Nike
 <summary>uitwerken voor 1e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+<img src="images/nike_pagina.screenshot.jpeg" width="375px" alt="Homepagina van Nike">
 
 
 ### Agenda voor meeting
