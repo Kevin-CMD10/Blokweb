@@ -16,14 +16,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 <summary>uitwerken voor kick-off werkgroep</summary>
 
 ### Auteur:
-Kevin Speek
+Sanne 't Hooft (vervangen door jouw naam)
 
 #### Je startniveau:
-Ik denk zelf dat ik op de rode piste zit, omdat ik code ook weer niet onwijs lastig vind (de basis dan). Het is ook niet zo dat ik er onwijs goed in ben, maar als eenmaal bepaalde dingen lukken dan is het natuurlijk tof. 
+hier je startniveau (kies uit zwart, rood óf blauw)
 
 #### Je focus:
-Ik ga mezelf focussen op zowel responsive als de surface. Ik wil dat mijn website sowieso bruikbaar is op een telefoon en laptop. 
-
+hier je focus (kies uit responsive óf surface plane)
+ 
 </details>
 
 
@@ -36,15 +36,15 @@ Ik ga mezelf focussen op zowel responsive als de surface. Ik wil dat mijn websit
 <summary>uitwerken voor kick-off werkgroep</summary>
 
 ### Je opdracht:
-https://www.nike.com/nl/
+link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
 
 #### Screenshot(s) van de eerste pagina (small screen): 
-Homepagina Nike 
-<img src="images/Nike_home.jpeg" width="375px" alt="Homepagina van Nike">
+hier de naam van de pagina  
+<img src="images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
 
 #### Screenshot(s) van de tweede pagina (small screen):
-Bestelpagina Nike
-<img src="images/Nike_bestellingen.jpeg" width="375px" alt="Bestellingen pagina van Nike">
+hier de naam van de pagina  
+<img src="images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
  
 </details>
 
@@ -56,10 +56,10 @@ Bestelpagina Nike
 <summary>uitwerken na afloop 2e werkgroep</summary>
 
 ### de hele pagina: 
-<img src="images/Nike_volledig_breakdown.png" width="375px" alt="Volledige breakdown Nike pagina.">
+<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
 
 ### dynamisch deel (bijv menu): 
-<img src="images/Nike_menu_breakdown.png" width="375px" alt="Slider van aanbiedingen">
+<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
 
 ### wellicht nog een dynamisch deel (bijv filter): 
 <img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
@@ -76,19 +76,17 @@ Bestelpagina Nike
 <summary>uitwerken voor 1e voortgang</summary>
 
 ### Stand van zaken
-<img src="images/nike_pagina_screenshot.png" width="375px" alt="Homepagina van Nike">
+hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
 
 ### Agenda voor meeting
 samen met je groepje opstellen
 
-| student 1          | student 2          | student 3    | student 4        |
-| Kevin              | ---                | ---          | ---              |
-|Ik wil graag weten  |
-|hoe ik content      |
-|kan verwerken op    |
-|de background-images|
-
+| student 1      | student 2          | student 3    | student 4        |
+| ---            | ---                | ---          | ---              |
+| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
+| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
+| ...            | ...                | ...          | ...              |
 
 
 ### Verslag van meeting
