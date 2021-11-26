@@ -167,8 +167,8 @@ section:nth-of-type(3) p {
 }
 
 section:nth-of-type(4) {
-  background-image: url(../images/nike.jpeg), url(../images/nike2.jpeg);
-  height: 65em;
+  background-image: url(../images/nike.jpeg);
+  height: 33em;
   margin-left: 1em;
   margin-top: 8em;
 
@@ -183,16 +183,26 @@ section:nth-of-type(4) h2 {
 }
 
 section:nth-of-type(5) {
+  background-image: url(../images/nike2.jpeg);
+  height: 30em;
+  margin-left: 1em;
+
+  background-size: 29em 29em;
+  background-repeat: no-repeat;
+}
+
+
+section:nth-of-type(6) {
   margin: 1.5em 1em 1em 1em;
 }
 
-section:nth-of-type(5) h2 {
+section:nth-of-type(6) h2 {
   margin: 0;
   font-size: 1.3rem;
   font-weight: 500;
 }
 
-section:nth-of-type(5) ul {
+section:nth-of-type(6) ul {
   display: flex;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
@@ -203,29 +213,29 @@ section:nth-of-type(5) ul {
   padding: 0;
 }
 
-section:nth-of-type(5) li {
+section:nth-of-type(6) li {
   list-style: none;
   margin: 0;
   line-height: 1.5em;
 }
 
-section:nth-of-type(5) h4 {
+section:nth-of-type(6) h4 {
   margin: 0;
   font-size: 18px;
   font-weight: 400;
 }
 
-section:nth-of-type(5) h4 ~ p {
+section:nth-of-type(6) h4 ~ p {
   font-size: 16px;
   font-weight: 200;
 }
 
-section:nth-of-type(5) img {
+section:nth-of-type(6) img {
   width: 20em;
   margin: 0;
 }
 
-section:nth-of-type(5) p {
+section:nth-of-type(6) p {
   margin: 0;
 }
 
