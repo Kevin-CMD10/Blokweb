@@ -29,7 +29,7 @@ header {
 
 header a img {
   margin: 0;
-  padding: 0.5em;
+  padding: .5em;
   width: 4em;
   height: auto;
   position: absolute;
@@ -142,7 +142,7 @@ section:nth-of-type(3) li {
 
 section:nth-of-type(3) h2 {
   margin: 0 0 1em 0;
-  font-size: 20px;
+  font-size: 1.3rem;
   font-weight: 500;
 }
 
@@ -178,15 +178,17 @@ section:nth-of-type(4) {
 }
 
 section:nth-of-type(4) h2 {
+  font-size: 1.3rem;
   font-weight: 500;
 }
 
 section:nth-of-type(5) {
-  margin: 5em 1em 1em 1em;
+  margin: 1.5em 1em 1em 1em;
 }
 
 section:nth-of-type(5) h2 {
   margin: 0;
+  font-size: 1.3rem;
   font-weight: 500;
 }
 
@@ -257,9 +259,28 @@ footer ul li {
 
 hr {
   color: white;
-  height: .1em;
+  height: .125rem;
   width: 95%;
   position: absolute;
   top: 15em;
   left: 1em;
+}
+
+footer section:nth-of-type(2) {
+  position: relative;
+}
+
+footer section:nth-of-type(2) button{
+  display: block;
+  padding: 1em;
+  position: absolute;
+  top: 9em;
+  width: 100%;
+  color: white;
+  background-color: transparent;
+  border: none;
+  align-items: flex-start;
+  text-align: left;
+  text-transform: uppercase;
+  cursor: pointer;
 }
