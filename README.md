@@ -109,17 +109,27 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 <summary>uitwerken voor 2e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
+Het maken van het hamburger menu verliep goed. De website responsive maken is wel nog een hele klus en daar zou ik eigenlijk nog meer over moeten leren. 
+ 
+ <img src="images/screenshot_hamburger.png" width="375px" alt="breakdown van nog een dynamisch deel">
+ 
+ 
 
 ### Agenda voor meeting
 samen met je groepje opstellen
 
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
+| student 1              | student 2          | student 3    | student 4        |
+ Graag meekijken 
+ naar het responsive
+ maken van de website.
+ 
+ - sections schalen niet mee 
+ - nieuwe afbeelding bij 
+ desktop breakpoint
+ 
+ Scroll over doet het niet.
+ 
+ 
 
 
 ### Verslag van meeting
@@ -180,6 +190,7 @@ Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbe
 
 ### Stand van zaken
 hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+
 
 
 ### Agenda voor meeting
