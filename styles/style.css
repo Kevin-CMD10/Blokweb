@@ -15,20 +15,22 @@ html {
   --slidernav: rgb(245, 245, 245);
   --button-color1: black;
   --button-color2: white;
+  --font-zwart: black;
+  --font-wit: white;
 }
 
 @media (min-width: 26em) {
-  body {
+  body.home {
     margin: 0;
     padding: 0;
   }
 
-  header {
+  .home header {
     position: relative;
     align-items: center;
   }
 
-  header a > img {
+  .home header a > img {
     margin: 0;
     padding: 0 0 0.5em;
     width: 4em;
@@ -38,7 +40,12 @@ html {
     top: 0;
   }
 
-  header nav:nth-of-type(1) {
+  .home header a {
+    text-decoration: none;
+    color: var(--font-zwart);
+  }
+
+  .home header nav:nth-of-type(1) {
     margin-top: 1em;
     display: flex;
     justify-content: flex-end;
@@ -46,7 +53,7 @@ html {
     margin-right: 1em;
   }
 
-  header nav:nth-of-type(1) button {
+  .home header nav:nth-of-type(1) button {
     position: relative;
     width: 2.5em;
     height: 2.5em;
@@ -59,7 +66,7 @@ html {
     background-color: transparent;
   }
 
-  header nav:nth-of-type(1) button span {
+  .home header nav:nth-of-type(1) button span {
     display: block;
     width: 50%;
     height: 1px;
@@ -69,57 +76,64 @@ html {
     transition: 0.3s;
   }
 
-  header nav:nth-of-type(1) button span:nth-of-type(1) {
+  .home header nav:nth-of-type(1) button span:nth-of-type(1) {
     transform: translateY(-5px);
   }
 
-  header nav:nth-of-type(1) button span:nth-of-type(3) {
+  .home header nav:nth-of-type(1) button span:nth-of-type(3) {
     transform: translateY(5px);
   }
 
-  header.toonMenu nav:nth-of-type(2) {
+  .home header.toonMenu nav:nth-of-type(2) {
     transform: translateX(50%);
     /* opacity: 0; */
   }
 
-  header.toonMenu nav:nth-of-type(1) button span {
+  .home header.toonMenu nav:nth-of-type(1) button span {
     background-color: red;
   }
 
-  header.toonMenu nav:nth-of-type(1) button span:nth-of-type(1) {
+  .home header.toonMenu nav:nth-of-type(1) button span:nth-of-type(1) {
     transform: rotate(45deg);
   }
 
-  header.toonMenu nav:nth-of-type(1) button span:nth-of-type(2) {
+  .home header.toonMenu nav:nth-of-type(1) button span:nth-of-type(2) {
     opacity: 0;
   }
 
-  header.toonMenu nav:nth-of-type(1) button span:nth-of-type(3) {
+  .home header.toonMenu nav:nth-of-type(1) button span:nth-of-type(3) {
     transform: rotate(-45deg);
   }
 
-  header nav:nth-of-type(1) img {
+  .home header nav:nth-of-type(1) img {
     display: flex;
     width: 1.3em;
   }
 
-  header nav:nth-of-type(2) {
+  /* header nav:nth-of-type(1) img:hover {
+    box-shadow: inset 0 0 0 1px rgb(161, 161, 161);
+  } */
+
+  .home header nav:nth-of-type(2) {
     overflow: scroll;
     overscroll-behavior: contain;
   }
 
-  header nav:nth-of-type(2) ul:nth-of-type(1) {
-    padding: 3em 2.5em 0;
+  .home header nav:nth-of-type(2) ul:nth-of-type(1) {
+    padding: 1em 2.5em 0;
     list-style: none;
+    line-height: 2.3em;
+
+    font-size: 1.2em;
   }
 
-  nav:nth-of-type(2) ul:nth-of-type(2) li:first-of-type {
+  .home nav:nth-of-type(2) ul:nth-of-type(2) li:first-of-type {
     background-image: url(../images/jordan-2.svg);
     margin: 0;
-    height: 6em;
-    width: 13em;
+    height: 2.9em;
+    width: 9em;
 
-    background-size: 3em 3em;
+    background-size: 2em 1.5em;
     background-position: 0 1em, 0 32.5em;
     background-repeat: no-repeat;
 
@@ -128,17 +142,17 @@ html {
     align-items: center;
   }
 
-  nav:nth-of-type(2) ul:nth-of-type(2) h4 {
+  .home header nav:nth-of-type(2) ul:nth-of-type(2) h4 {
     font-weight: 500;
   }
 
-  nav:nth-of-type(2) ul:nth-of-type(2) li:last-of-type {
+  .home header nav:nth-of-type(2) ul:nth-of-type(2) li:last-of-type {
     background-image: url(../images/Converse.png);
     margin: 0;
-    height: 6em;
-    width: 13em;
+    height: 5em;
+    width: 10em;
 
-    background-size: 3em 2em;
+    background-size: 2em 1.5em;
     background-position: 0 2em, 0 32.5em;
     background-repeat: no-repeat;
 
@@ -146,7 +160,7 @@ html {
     justify-content: center;
     align-items: center;
   }
-  header nav:nth-of-type(2) {
+  .home header nav:nth-of-type(2) {
     margin: 0;
     padding: 0;
     background: white;
@@ -166,7 +180,89 @@ html {
     font-weight: 500;
   }
 
-  section:nth-of-type(1) {
+  .home header nav:nth-of-type(2) section {
+    width: 50%;
+    margin-top: 2em;
+    padding: 0 2.5em 0;
+    line-height: 1.2em;
+  }
+
+  .home header nav:nth-of-type(2) section p {
+    margin-bottom: 3em;
+    font-size: 1em;
+    color: rgb(139, 139, 139);
+  }
+
+  .home header nav:nth-of-type(2) section a:first-of-type {
+    padding: 0.6em 1.5em;
+    background-color: var(--button-color1);
+    font-weight: 100;
+    color: var(--font-wit);
+    border-radius: 20px;
+    text-decoration: none;
+    margin-top: 2em;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .home header nav:nth-of-type(2) section a:last-of-type {
+    padding: 0.6em 1.5em;
+    background-color: var(--button-color2);
+    font-weight: 100;
+    color: var(--button-color1);
+    border-radius: 20px;
+    text-decoration: none;
+    margin-top: 2em;
+    font-size: 14px;
+    font-weight: 400;
+    border: solid 1px black;
+  }
+
+  .home header nav:nth-of-type(2) ul:nth-of-type(3) {
+    padding: 3em 2.5em 0;
+    list-style: none;
+  }
+
+  .home header nav:nth-of-type(2) ul:nth-of-type(3) li {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    list-style: none;
+  }
+
+  .home header nav:nth-of-type(2) ul:nth-of-type(3) li:nth-of-type(1) {
+    background-image: url(../images/winkelmandje.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0.5em;
+    background-size: 1.5em auto;
+
+    padding-left: 2.5em;
+  }
+
+  .home header nav:nth-of-type(2) ul:nth-of-type(3) li:nth-of-type(2) {
+    background-image: url(../images/bestelling_icon.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0.5em;
+    background-size: 1.5em auto;
+
+    padding-left: 2.5em;
+  }
+
+  .home header nav:nth-of-type(2) ul:nth-of-type(3) li:nth-of-type(3) {
+    background-image: url(../images/help_icon.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0.5em;
+    background-size: 1.5em auto;
+
+    padding-left: 2.5em;
+  }
+
+  .home header nav:nth-of-type(2) ul:nth-of-type(3) li a {
+    text-decoration: none;
+    color: var(--font-zwart);
+  }
+
+  .home main section:nth-of-type(1) {
     margin-top: 0.5em;
     background-color: var(--slidernav);
     height: 3em;
@@ -175,27 +271,27 @@ html {
     align-items: center;
   }
 
-  section:nth-of-type(1) p {
+  .home main section:nth-of-type(1) p {
     margin: 0;
     font-size: 10px;
   }
 
-  section:nth-of-type(2) {
+  .home main section:nth-of-type(2) {
     margin-left: 1em;
   }
 
-  figure {
+  .home main figure {
     margin: 0 1em 0 0;
     display: flex;
     flex-direction: column;
   }
 
-  figcaption {
+  .home main figure figcaption {
     margin-top: 0.5em;
     order: 3;
   }
 
-  figure h1 {
+  .home main figure h1 {
     order: 2;
     text-transform: uppercase;
     margin: 0.5em 0 0 0;
@@ -205,40 +301,40 @@ html {
     letter-spacing: -3px;
   }
 
-  figure img {
+  .home main figure img {
     order: 1;
   }
 
-  figcaption p {
+  .home main figure figcaption p {
     font-size: 16px;
     line-height: 1.5;
     font-weight: 300;
   }
 
-  figure figcaption div a {
+  .home main figure figcaption div a {
     padding: 0.5em 1.75em;
     background-color: var(--button-color1);
     font-weight: 100;
-    color: white;
+    color: var(--font-wit);
     border-radius: 20px;
     text-decoration: none;
     margin-top: 2em;
     font-size: 16px;
   }
 
-  figure figcaption div a:hover {
+  .home main figure figcaption div a:hover {
     background-color: rgb(84, 84, 151);
   }
 
-  div {
+  .home main figure div {
     margin-top: 2em;
   }
 
-  section:nth-of-type(3) {
+  .home main section:nth-of-type(3) {
     margin: 5em 1em 1em 1em;
   }
 
-  section:nth-of-type(3) ul {
+  .home main section:nth-of-type(3) ul {
     display: flex;
     overflow-x: auto;
     overflow-y: hidden;
@@ -250,74 +346,134 @@ html {
     padding: 0;
   }
 
-  section:nth-of-type(3) li {
+  .home main section:nth-of-type(3) li {
     list-style: none;
     margin: 0;
     line-height: 1.5em;
   }
 
-  section:nth-of-type(3) h2 {
+  .home main section:nth-of-type(3) a {
+    text-decoration: none;
+    color: var(--font-zwart);
+  }
+
+  .home main section:nth-of-type(3) h2 {
     margin: 0 0 1em 0;
     font-size: 1.3rem;
     font-weight: 500;
   }
 
-  section:nth-of-type(3) h4 {
+  .home main section:nth-of-type(3) h4 {
     margin: 0;
     font-size: 18px;
     font-weight: 400;
   }
 
-  section:nth-of-type(3) h4 ~ p {
+  .home main section:nth-of-type(3) h4 ~ p {
     font-size: 16px;
     font-weight: 200;
   }
 
-  section:nth-of-type(3) img {
+  .home main section:nth-of-type(3) img {
     width: 20em;
     margin: 0;
   }
 
-  section:nth-of-type(3) p {
+  .home main section:nth-of-type(3) p {
     margin: 0;
   }
 
-  section:nth-of-type(4) {
+  .home main section:nth-of-type(4) {
+    position: relative;
     background-image: url(../images/nike.jpeg);
     height: 33em;
     margin-left: 1em;
     margin-top: 8em;
+    margin-right: 1em;
 
-    background-size: 29em 29em;
+    background-size: 100%;
     background-position: 0 3em, 0 32.5em;
     background-repeat: no-repeat;
   }
 
-  section:nth-of-type(4) h2 {
+  .home main section:nth-of-type(4) h4 {
+    position: absolute;
+    color: var(--font-wit);
+    font-weight: 400;
+    bottom: 5em;
+    left: 1em;
+  }
+
+  .home main section:nth-of-type(4) a {
+    position: absolute;
+    color: var(--font-zwart);
+    font-size: 16px;
+    font-weight: 400;
+    background-color: var(--button-color2);
+
+    padding: 0.5em 1.75em;
+    border-radius: 20px;
+    text-decoration: none;
+
+    bottom: 3em;
+    left: 1em;
+  }
+
+  .home main section:nth-of-type(4) h2 {
     font-size: 1.3rem;
     font-weight: 500;
   }
 
-  section:nth-of-type(5) {
+  .home main section:nth-of-type(5) {
+    position: relative;
     background-image: url(../images/nike2.jpeg);
     height: 30em;
     margin-left: 1em;
+    margin-right: 1em;
 
-    background-size: 29em 29em;
+    background-size: 100%;
     background-repeat: no-repeat;
   }
 
-  section:nth-of-type(6) {
+  .home main section:nth-of-type(5) h4 {
+    position: absolute;
+    color: var(--font-wit);
+    font-weight: 400;
+    bottom: 5em;
+    left: 1em;
+  }
+
+  .home main section:nth-of-type(5) a {
+    position: absolute;
+    color: var(--font-zwart);
+    font-size: 16px;
+    font-weight: 400;
+    background-color: var(--button-color2);
+
+    padding: 0.5em 1.75em;
+    border-radius: 20px;
+    text-decoration: none;
+
+    bottom: 3em;
+    left: 1em;
+  }
+
+  .home main section:nth-of-type(6) {
     margin: 1.5em 1em 1em 1em;
   }
 
-  section:nth-of-type(6) h2 {
+  .home main section:nth-of-type(6) a {
+    text-decoration: none;
+    color: var(--font-zwart);
+  }
+
+  .home main section:nth-of-type(6) h2 {
     margin: 0;
     font-size: 1.3rem;
     font-weight: 500;
   }
 
-  section:nth-of-type(6) ul {
+  .home main section:nth-of-type(6) ul {
     display: flex;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
@@ -328,46 +484,54 @@ html {
     padding: 0;
   }
 
-  section:nth-of-type(6) li {
+  .home main section:nth-of-type(6) li {
     list-style: none;
     margin: 0;
     line-height: 1.5em;
+    
   }
 
-  section:nth-of-type(6) h4 {
+  .home main section:nth-of-type(6) h4 {
     margin: 0;
     font-size: 18px;
     font-weight: 400;
   }
 
-  section:nth-of-type(6) h4 ~ p {
+  .home main section:nth-of-type(6) h4 ~ p {
     font-size: 16px;
     font-weight: 200;
   }
 
-  section:nth-of-type(6) img {
+  .home main section:nth-of-type(6) img {
     width: 20em;
     margin: 0;
   }
 
-  section:nth-of-type(6) p {
+  .home main section:nth-of-type(6) p {
     margin: 0;
   }
 
-  footer {
+  /* footer  */
+
+  .home footer {
     background-color: black;
     margin-top: 10em;
     height: 60em;
   }
 
-  footer section:nth-of-type(1) {
+  .home footer a {
+    text-decoration: none;
+    color: var(--font-wit);
+  }
+
+  .home footer section:nth-of-type(1) {
     height: 10em;
     background-color: black;
     display: block;
     position: relative;
   }
 
-  footer section:nth-of-type(1) ul {
+  .home footer section:nth-of-type(1) ul {
     justify-content: flex-start;
     position: absolute;
     top: 1em;
@@ -375,14 +539,14 @@ html {
     margin: 1em;
   }
 
-  footer section:nth-of-type(1) ul li {
+  .home footer section:nth-of-type(1) ul li {
     list-style-type: none;
     font-size: 14px;
-    color: white;
+    color: var(--font-wit);
     line-height: 2.3em;
   }
 
-  hr {
+  .home hr {
     color: white;
     height: 0.125rem;
     width: 95%;
@@ -391,17 +555,18 @@ html {
     left: 1em;
   }
 
-  footer section:nth-of-type(2) {
+  .home footer section:nth-of-type(2) {
     position: relative;
   }
 
-  footer section:nth-of-type(2) button {
+  .home footer section:nth-of-type(2) button {
     display: block;
-    padding: 1em;
+    padding: 0.5em;
+    margin: 1em;
     position: absolute;
     top: 7.5em;
     width: 100%;
-    color: white;
+    color: var(--font-wit);
     background-color: transparent;
     border: none;
     align-items: flex-start;
@@ -410,13 +575,14 @@ html {
     cursor: pointer;
   }
 
-  footer section:nth-of-type(2) button:last-of-type {
+  .home footer section:nth-of-type(2) button:last-of-type {
     display: block;
-    padding: 1em;
+    padding: 0.5em;
+    margin: 1em;
     position: absolute;
     top: 14em;
     width: 100%;
-    color: white;
+    color: var(--font-wit);
     background-color: transparent;
     border: none;
     align-items: flex-start;
@@ -425,39 +591,40 @@ html {
     cursor: pointer;
   }
 
-  footer section:nth-of-type(3) {
-    position: relative;
-  }
-
-  footer section:nth-of-type(3) ul {
+  .home footer section:nth-of-type(3) {
     margin-top: 20em;
   }
+  .home footer section:nth-of-type(3) ul {
+    padding: 0.5em;
+    display: flex;
+    justify-content: flex-start;
+    gap: 0.5em;
+  }
 
-  footer section:nth-of-type(3) ul li {
+  .home footer section:nth-of-type(3) ul li {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 0.5em;
     width: 3em;
     height: 3em;
     border-radius: 50%;
     background-color: lightgray;
   }
 
-  footer section:nth-of-type(3) ul li img {
+  .home footer section:nth-of-type(3) ul li img {
     width: 2em;
     height: 2em;
   }
 
-  footer section:nth-of-type(3) ul li:hover {
+  .home footer section:nth-of-type(3) ul li:hover {
     background-color: white;
   }
 
-  footer section:last-of-type {
+  .home footer section:last-of-type {
     position: relative;
   }
 
-  /* footer section:last-of-type ul{
+  .home footer section:nth-of-type(4) ul {
     justify-content: flex-start;
     position: absolute;
     top: 1em;
@@ -466,19 +633,473 @@ html {
     background-repeat: no-repeat;
   }
 
-  footer section:last-of-type ul li {
+  .home footer section:nth-of-type(4) ul li {
     list-style-type: none;
     font-size: 14px;
-    color: white;
+    color: var(--font-wit);
     line-height: 3em;
-  } */
+  }
+
+  /* Bestellingen pagina */
+
+  body.bestellingen {
+    margin: 0;
+    padding: 0;
+  }
+
+  .bestellingen header {
+    position: relative;
+    align-items: center;
+  }
+
+  .bestellingen header a > img {
+    margin: 0;
+    padding: 0 0 0.5em;
+    width: 4em;
+    height: auto;
+    position: absolute;
+    left: 1em;
+    top: 0;
+  }
+
+  .bestellingen header nav:nth-of-type(1) {
+    margin-top: 1em;
+    display: flex;
+    justify-content: flex-end;
+    gap: 2em;
+    margin-right: 1em;
+  }
+
+  .bestellingen header nav:nth-of-type(1) button {
+    position: relative;
+    width: 2.5em;
+    height: 2.5em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    border: none;
+    background-color: transparent;
+  }
+
+  .bestellingen header nav:nth-of-type(1) button span {
+    display: block;
+    width: 50%;
+    height: 1px;
+    background-color: black;
+
+    position: absolute;
+    transition: 0.3s;
+  }
+
+  .bestellingen header nav:nth-of-type(1) button span:nth-of-type(1) {
+    transform: translateY(-5px);
+  }
+
+  .bestellingen header nav:nth-of-type(1) button span:nth-of-type(3) {
+    transform: translateY(5px);
+  }
+
+  .bestellingen header.toonMenu nav:nth-of-type(2) {
+    transform: translateX(50%);
+    /* opacity: 0; */
+  }
+
+  .bestellingen header.toonMenu nav:nth-of-type(1) button span {
+    background-color: red;
+  }
+
+  .bestellingen header.toonMenu nav:nth-of-type(1) button span:nth-of-type(1) {
+    transform: rotate(45deg);
+  }
+
+  .bestellingen header.toonMenu nav:nth-of-type(1) button span:nth-of-type(2) {
+    opacity: 0;
+  }
+
+  .bestellingen header.toonMenu nav:nth-of-type(1) button span:nth-of-type(3) {
+    transform: rotate(-45deg);
+  }
+
+  .bestellingen header nav:nth-of-type(1) img {
+    display: flex;
+    width: 1.3em;
+  }
+
+  /* header nav:nth-of-type(1) img:hover {
+  box-shadow: inset 0 0 0 1px rgb(161, 161, 161);
+} */
+
+  .bestellingen header nav:nth-of-type(2) {
+    overflow: scroll;
+    overscroll-behavior: contain;
+  }
+
+  .bestellingen header nav:nth-of-type(2) ul:nth-of-type(1) {
+    padding: 1em 2.5em 0;
+    list-style: none;
+    line-height: 2.3em;
+
+    font-size: 1.2em;
+  }
+
+  .bestellingen nav:nth-of-type(2) ul:nth-of-type(2) li:first-of-type {
+    background-image: url(../images/jordan-2.svg);
+    margin: 0;
+    height: 2.9em;
+    width: 9em;
+
+    background-size: 2em 1.5em;
+    background-position: 0 1em, 0 32.5em;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bestellingen header nav:nth-of-type(2) ul:nth-of-type(2) h4 {
+    font-weight: 500;
+  }
+
+  .bestellingen header nav:nth-of-type(2) ul:nth-of-type(2) li:last-of-type {
+    background-image: url(../images/Converse.png);
+    margin: 0;
+    height: 5em;
+    width: 10em;
+
+    background-size: 2em 1.5em;
+    background-position: 0 2em, 0 32.5em;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .bestellingen header nav:nth-of-type(2) {
+    margin: 0;
+    padding: 0;
+    background: white;
+    list-style: none;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    transform: translatex(100%);
+    transition: 0.3s;
+
+    font-size: 15px;
+    line-height: 3em;
+    font-weight: 500;
+  }
+
+  .bestellingen header nav:nth-of-type(2) section {
+    width: 50%;
+    margin-top: 2em;
+    padding: 0 2.5em 0;
+    line-height: 1.2em;
+  }
+
+  .bestellingen header nav:nth-of-type(2) section p {
+    margin-bottom: 3em;
+    font-size: 1em;
+    color: rgb(139, 139, 139);
+  }
+
+  .bestellingen header nav:nth-of-type(2) section a:first-of-type {
+    padding: 0.6em 1.5em;
+    background-color: var(--button-color1);
+    font-weight: 100;
+    color: var(--font-wit);
+    border-radius: 20px;
+    text-decoration: none;
+    margin-top: 2em;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .bestellingen header nav:nth-of-type(2) section a:last-of-type {
+    padding: 0.6em 1.5em;
+    background-color: var(--button-color2);
+    font-weight: 100;
+    color: var(--button-color1);
+    border-radius: 20px;
+    text-decoration: none;
+    margin-top: 2em;
+    font-size: 14px;
+    font-weight: 400;
+    border: solid 1px black;
+  }
+
+  .bestellingen header nav:nth-of-type(2) ul:nth-of-type(3) {
+    padding: 3em 2.5em 0;
+    list-style: none;
+  }
+
+  .bestellingen header nav:nth-of-type(2) ul:nth-of-type(3) li {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    list-style: none;
+  }
+
+  .bestellingen header nav:nth-of-type(2) ul:nth-of-type(3) li:nth-of-type(1) {
+    background-image: url(../images/winkelmandje.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0.5em;
+    background-size: 1.5em 1.5em;
+
+    padding-left: 2.5em;
+  }
+
+  .bestellingen header nav:nth-of-type(2) ul:nth-of-type(3) li:nth-of-type(2) {
+    background-image: url(../images/bestelling_icon.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0.5em;
+    background-size: 1.5em 1.5em;
+
+    padding-left: 2.5em;
+  }
+
+  .bestellingen header nav:nth-of-type(2) ul:nth-of-type(3) li:nth-of-type(3) {
+    background-image: url(../images/help_icon.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0.5em;
+    background-size: 1.5em 1.5em;
+
+    padding-left: 2.5em;
+  }
+
+  .bestellingen header nav:nth-of-type(2) ul:nth-of-type(3) li a {
+    text-decoration: none;
+    color: var(--font-zwart);
+  }
+
+  .bestellingen main section:nth-of-type(1) {
+  padding: 3.125rem 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+
+  .bestellingen main form {
+    width: 50%;
+    justify-content: center;
+  }
+
+  .bestellingen main form h3 {
+    margin: 0;
+    font-size: 18px;
+    color: var(--font-zwart);
+    font-weight: 500;
+  }
+
+  .bestellingen main form p:nth-of-type(1) {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 100;
+  }
+
+  .bestellingen form section:nth-of-type(1) input {
+    width: 20em;
+    height: 4em;
+    padding-left: 1em;
+    border-radius: .5em;
+    border: solid 1px lightgray;
+  }
+
+  .bestellingen form section:nth-of-type(2) input {
+    width: 20em;
+    height: 4em;
+    padding-left: 1em;
+    border-radius: .5em;
+    border: solid 1px lightgray;
+  }
+
+  .bestellingen form button {
+    width: 20em;
+    height: 4em;
+    border:none;
+    border-radius: 5em;
+  }
+
+  .bestellingen main form p:nth-of-type(2) {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 100;
+  }
+
+  /* bestellingen footer  */
+
+  .bestellingen footer {
+    background-color: black;
+    margin-top: 10em;
+    height: 60em;
+  }
+
+  .bestellingen footer a {
+    text-decoration: none;
+    color: var(--font-wit);
+  }
+
+  .bestellingen footer section:nth-of-type(1) {
+    height: 10em;
+    background-color: black;
+    display: block;
+    position: relative;
+  }
+
+  .bestellingen footer section:nth-of-type(1) ul {
+    justify-content: flex-start;
+    position: absolute;
+    top: 1em;
+    padding: 0.5em;
+    margin: 1em;
+  }
+
+  .bestellingen footer section:nth-of-type(1) ul li {
+    list-style-type: none;
+    font-size: 14px;
+    color: var(--font-wit);
+    line-height: 2.3em;
+  }
+
+  .bestellingen hr {
+    color: white;
+    height: 0.125rem;
+    width: 95%;
+    position: absolute;
+    top: 15em;
+    left: 1em;
+  }
+
+  .bestellingen footer section:nth-of-type(2) {
+    position: relative;
+  }
+
+  .bestellingen footer section:nth-of-type(2) button {
+    display: block;
+    padding: 0.5em;
+    margin: 1em;
+    position: absolute;
+    top: 7.5em;
+    width: 100%;
+    color: var(--font-wit);
+    background-color: transparent;
+    border: none;
+    align-items: flex-start;
+    text-align: left;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  .bestellingen footer section:nth-of-type(2) button:last-of-type {
+    display: block;
+    padding: 0.5em;
+    margin: 1em;
+    position: absolute;
+    top: 14em;
+    width: 100%;
+    color: var(--font-wit);
+    background-color: transparent;
+    border: none;
+    align-items: flex-start;
+    text-align: left;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  .bestellingen footer section:nth-of-type(3) {
+    margin-top: 20em;
+  }
+  .bestellingen footer section:nth-of-type(3) ul {
+    padding: 0.5em;
+    display: flex;
+    justify-content: flex-start;
+    gap: 0.5em;
+  }
+
+  .bestellingen footer section:nth-of-type(3) ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    background-color: lightgray;
+  }
+
+  .bestellingen footer section:nth-of-type(3) ul li img {
+    width: 2em;
+    height: 2em;
+  }
+
+  .bestellingen footer section:nth-of-type(3) ul li:hover {
+    background-color: white;
+  }
+
+  .bestellingen footer section:last-of-type {
+    position: relative;
+  }
+
+  .bestellingen footer section:nth-of-type(4) ul {
+    justify-content: flex-start;
+    position: absolute;
+    top: 1em;
+    padding: 0.5em;
+    margin: 1em;
+    background-repeat: no-repeat;
+  }
+
+  .bestellingen footer section:nth-of-type(4) ul li {
+    list-style-type: none;
+    font-size: 14px;
+    color: var(--font-wit);
+    line-height: 3em;
+  }
+
+
+
+
+
+
 }
 
-@media (min-width: 80em) {
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 80em) {
   header a > img {
     margin: 0;
-    padding: 0 0 0 .5rem;
+    padding: 0 0 0 0.5rem;
     width: 4em;
     height: auto;
     position: absolute;
@@ -538,9 +1159,8 @@ html {
   section:nth-of-type(4) h2 {
     font-size: 1.3rem;
     font-weight: 500;
-    padding: 0 0 0 3.5rem;;
+    padding: 0 0 0 3.5rem;
   }
-
 
   section:nth-of-type(6) {
     margin-top: 5em;
@@ -589,5 +1209,4 @@ html {
   section:nth-of-type(6) p {
     margin: 0;
   }
-
 }
