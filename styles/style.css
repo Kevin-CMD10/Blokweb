@@ -30,6 +30,19 @@ html {
     align-items: center;
   }
 
+  .home header a.content {
+    color: purple;
+    position: absolute;
+    top: 0.5em;
+    left: 2em;
+    display: block;
+    transform: translateX(calc(-100% - 2em));
+  }
+
+  .home header a.content:focus {
+    transform: none;
+  }
+
   .home header a > img {
     margin: 0;
     padding: 0 0 0.5em;
@@ -44,6 +57,8 @@ html {
     text-decoration: none;
     color: var(--font-zwart);
   }
+
+  /* NAV EEN  */
 
   .home header nav:nth-of-type(1) {
     margin-top: 1em;
@@ -110,9 +125,7 @@ html {
     width: 1.3em;
   }
 
-  /* header nav:nth-of-type(1) img:hover {
-    box-shadow: inset 0 0 0 1px rgb(161, 161, 161);
-  } */
+  /* NAV TWEE */
 
   .home header nav:nth-of-type(2) {
     overflow: scroll;
@@ -262,6 +275,16 @@ html {
     color: var(--font-zwart);
   }
 
+  .home header nav:nth-of-type(3) {
+    display: none;
+  }
+
+  .home header nav:nth-of-type(4) {
+    display: none;
+  }
+
+  /* GRIJZE SLIDER */
+
   .home main section:nth-of-type(1) {
     margin-top: 0.5em;
     background-color: var(--slidernav);
@@ -276,19 +299,11 @@ html {
     font-size: 10px;
   }
 
+  /* FIGURE */
+
   .home main section:nth-of-type(2) {
     margin-left: 1em;
-  }
-
-  .home main figure {
-    margin: 0 1em 0 0;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .home main figure figcaption {
-    margin-top: 0.5em;
-    order: 3;
+    margin-right: 1em;
   }
 
   .home main figure h1 {
@@ -299,10 +314,26 @@ html {
     line-height: 1;
     font-size: 37px;
     letter-spacing: -3px;
+
+    padding-top: 18.5em;
   }
 
-  .home main figure img {
-    order: 1;
+  .home main figure {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+
+    background-image: url(../images/Huarache.png);
+    height: 55em;
+
+    background-size: 100%;
+    background-position: 0 0 32.5em;
+    background-repeat: no-repeat;
+  }
+
+  .home main figure figcaption {
+    margin-top: 0.5em;
+    order: 3;
   }
 
   .home main figure figcaption p {
@@ -330,14 +361,16 @@ html {
     margin-top: 2em;
   }
 
+  /* EERSTE CARROUSEL */
+
   .home main section:nth-of-type(3) {
-    margin: 5em 1em 1em 1em;
+    margin: 3em 1em 1em 1em;
   }
 
   .home main section:nth-of-type(3) ul {
     display: flex;
     overflow-x: auto;
-    overflow-y: hidden;
+    overflow-y: visible;
     scroll-snap-type: x mandatory;
     scroll-snap-align: center;
     overscroll-behavior: none;
@@ -383,97 +416,94 @@ html {
     margin: 0;
   }
 
-  .home main section:nth-of-type(4) {
-    position: relative;
-    background-image: url(../images/nike.jpeg);
-    height: 33em;
-    margin-left: 1em;
-    margin-top: 8em;
-    margin-right: 1em;
+  /* 
+  TWEE ARTIKELEN NAAST ELKAAR */
 
-    background-size: 100%;
-    background-position: 0 3em, 0 32.5em;
-    background-repeat: no-repeat;
-  }
-
-  .home main section:nth-of-type(4) h4 {
-    position: absolute;
-    color: var(--font-wit);
-    font-weight: 400;
-    bottom: 5em;
-    left: 1em;
-  }
-
-  .home main section:nth-of-type(4) a {
-    position: absolute;
-    color: var(--font-zwart);
-    font-size: 16px;
-    font-weight: 400;
-    background-color: var(--button-color2);
-
-    padding: 0.5em 1.75em;
-    border-radius: 20px;
-    text-decoration: none;
-
-    bottom: 3em;
-    left: 1em;
-  }
-
-  .home main section:nth-of-type(4) h2 {
-    font-size: 1.3rem;
-    font-weight: 500;
-  }
-
-  .home main section:nth-of-type(5) {
-    position: relative;
-    background-image: url(../images/nike2.jpeg);
-    height: 30em;
+  .home main article:nth-of-type(1) {
+    margin-top: 5em;
     margin-left: 1em;
     margin-right: 1em;
-
-    background-size: 100%;
-    background-repeat: no-repeat;
   }
 
-  .home main section:nth-of-type(5) h4 {
-    position: absolute;
-    color: var(--font-wit);
-    font-weight: 400;
-    bottom: 5em;
-    left: 1em;
+  .home main article:nth-of-type(1) ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
   }
 
-  .home main section:nth-of-type(5) a {
-    position: absolute;
-    color: var(--font-zwart);
-    font-size: 16px;
-    font-weight: 400;
-    background-color: var(--button-color2);
-
-    padding: 0.5em 1.75em;
-    border-radius: 20px;
-    text-decoration: none;
-
-    bottom: 3em;
-    left: 1em;
-  }
-
-  .home main section:nth-of-type(6) {
-    margin: 1.5em 1em 1em 1em;
-  }
-
-  .home main section:nth-of-type(6) a {
-    text-decoration: none;
-    color: var(--font-zwart);
-  }
-
-  .home main section:nth-of-type(6) h2 {
+  .home main article:nth-of-type(1) h2 {
     margin: 0;
     font-size: 1.3rem;
     font-weight: 500;
   }
 
-  .home main section:nth-of-type(6) ul {
+  .home main article:nth-of-type(1) ul li:nth-of-type(1) {
+    position: relative;
+    margin: 0;
+    background-image: url(../images/nike.jpeg);
+    height: 33em;
+
+    background-size: 100%;
+    background-position: 0 0, 0 32.5em;
+    background-repeat: no-repeat;
+  }
+
+  .home main article:nth-of-type(1) ul li h4 {
+    position: absolute;
+    color: var(--font-wit);
+    font-weight: 400;
+    bottom: 7em;
+    left: 1em;
+  }
+
+  .home main article:nth-of-type(1) ul li a {
+    position: absolute;
+    color: var(--font-zwart);
+    font-size: 16px;
+    font-weight: 400;
+    background-color: var(--button-color2);
+
+    padding: 0.5em 1.75em;
+    border-radius: 20px;
+    text-decoration: none;
+
+    bottom: 5em;
+    left: 1em;
+  }
+
+  .home main article:nth-of-type(1) ul li:nth-of-type(2) {
+    position: relative;
+    margin-top: 1em;
+    background-image: url(../images/nike2.jpeg);
+    height: 33em;
+
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 0 0, 0 32.5em;
+    list-style: none;
+  }
+
+  /* TWEEDE CARROUSEL */
+
+  .home main section:nth-of-type(4) {
+    margin: 1.5em 1em 1em 1em;
+  }
+
+  .home main section:nth-of-type(4) a {
+    text-decoration: none;
+    color: var(--font-zwart);
+  }
+
+  .home main section:nth-of-type(4) h2 {
+    margin: 0;
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
+
+  .home main section:nth-of-type(4) ul {
     display: flex;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
@@ -484,32 +514,210 @@ html {
     padding: 0;
   }
 
-  .home main section:nth-of-type(6) li {
+  .home main section:nth-of-type(4) li {
     list-style: none;
     margin: 0;
     line-height: 1.5em;
-    
   }
 
-  .home main section:nth-of-type(6) h4 {
+  .home main section:nth-of-type(4) h4 {
     margin: 0;
     font-size: 18px;
     font-weight: 400;
   }
 
-  .home main section:nth-of-type(6) h4 ~ p {
+  .home main section:nth-of-type(4) h4 ~ p {
     font-size: 16px;
     font-weight: 200;
   }
 
-  .home main section:nth-of-type(6) img {
+  .home main section:nth-of-type(4) img {
     width: 20em;
     margin: 0;
   }
 
-  .home main section:nth-of-type(6) p {
+  .home main section:nth-of-type(4) p {
     margin: 0;
   }
+
+  /* 5e section */
+
+  .home main section:nth-of-type(5) {
+    margin: 5em 1em 0 1em;
+  }
+
+  .home main section:nth-of-type(5) h2 {
+    margin: 0;
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
+
+  .home main section:nth-of-type(5) article {
+    background-image: url(../images/fortnitexjordan.jpeg);
+    position: relative;
+    margin: 1em 0 0 0;
+    height: 33em;
+
+    background-size: auto 30em;
+    background-position: 0 0, 0 3em;
+    background-repeat: no-repeat;
+  }
+
+  .home main section:nth-of-type(5) article h4 {
+    position: absolute;
+    color: var(--font-wit);
+    font-weight: 400;
+    bottom: 7em;
+    left: 1em;
+  }
+
+  .home main section:nth-of-type(5) article a {
+    position: absolute;
+    color: var(--font-zwart);
+    font-size: 16px;
+    font-weight: 400;
+    background-color: var(--button-color2);
+
+    padding: 0.5em 1.75em;
+    border-radius: 20px;
+    text-decoration: none;
+
+    bottom: 5em;
+    left: 1em;
+  }
+
+  .home main article:nth-of-type(2) {
+    margin-top: 5em;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  .home main article:nth-of-type(2) ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  .home main article:nth-of-type(2) h2 {
+    margin: 0;
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
+
+  .home main article:nth-of-type(2) ul li:nth-of-type(1) {
+    position: relative;
+    margin: 0;
+    background-image: url(../images/metcon.webp);
+    height: 33em;
+
+    background-size: 100%;
+    background-position: 0 0, 0 32.5em;
+    background-repeat: no-repeat;
+  }
+
+  .home main article:nth-of-type(2) ul li h4 {
+    position: absolute;
+    color: var(--font-wit);
+    font-weight: 400;
+    bottom: 7em;
+    left: 1em;
+  }
+
+  .home main article:nth-of-type(2) ul li a {
+    position: absolute;
+    color: var(--font-zwart);
+    font-size: 16px;
+    font-weight: 400;
+    background-color: var(--button-color2);
+
+    padding: 0.5em 1.75em;
+    border-radius: 20px;
+    text-decoration: none;
+
+    bottom: 5em;
+    left: 1em;
+  }
+
+  .home main article:nth-of-type(2) ul li:nth-of-type(2) {
+    position: relative;
+    margin-top: 1em;
+    background-image: url(../images/schoenen.jpeg);
+    height: 33em;
+
+    background-size: 100% 30em;
+    background-repeat: no-repeat;
+    background-position: 0 0, 0 32.5em;
+    list-style: none;
+  }
+
+
+
+  /* Zesde section  */
+
+  .home main section:nth-of-type(6) {
+    margin: 1em 1em;
+  }
+
+  .home main section:nth-of-type(6) h2 {
+    margin: 0 0 1em 0;
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
+
+
+
+  .home main section:nth-of-type(6) ul {
+    list-style: none;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: visible;
+    scroll-snap-type: x mandatory;
+    scroll-snap-align: center;
+    overscroll-behavior: none;
+
+    padding: 0;
+    height: 27em;
+    gap: 1em;
+  }
+
+  .home main section:nth-of-type(6) ul li {
+    position: relative;
+
+  }
+  
+  .home main section:nth-of-type(6) ul li img {
+    width: 27em;
+    height: 27em;
+  }
+
+  .home main section:nth-of-type(6) ul li a {
+    z-index: 100;
+    position: absolute;
+    bottom: 4em;
+    left: 1em;
+
+    padding: 0.5em 1.75em;
+    background-color: var(--button-color2);
+    font-weight: 400;
+    color: var(--font-zwart);
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 14px;
+  }
+
+
+  
+
+
+
+
+
+
+
+
 
   /* footer  */
 
@@ -727,10 +935,6 @@ html {
     width: 1.3em;
   }
 
-  /* header nav:nth-of-type(1) img:hover {
-  box-shadow: inset 0 0 0 1px rgb(161, 161, 161);
-} */
-
   .bestellingen header nav:nth-of-type(2) {
     overflow: scroll;
     overscroll-behavior: contain;
@@ -880,27 +1084,26 @@ html {
   }
 
   .bestellingen main section:nth-of-type(1) {
-  padding: 3.125rem 0 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    padding: 3.125rem 0 0;
   }
 
   .bestellingen main form {
-    width: 50%;
+    width: 19.75rem;
     justify-content: center;
+    margin: 0 auto;
+    text-align: center;
   }
 
   .bestellingen main form h3 {
     margin: 0;
-    font-size: 18px;
+    font-size: 20px;
     color: var(--font-zwart);
     font-weight: 500;
   }
 
   .bestellingen main form p:nth-of-type(1) {
     margin: 0;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 100;
   }
 
@@ -908,7 +1111,7 @@ html {
     width: 20em;
     height: 4em;
     padding-left: 1em;
-    border-radius: .5em;
+    border-radius: 0.5em;
     border: solid 1px lightgray;
   }
 
@@ -916,21 +1119,28 @@ html {
     width: 20em;
     height: 4em;
     padding-left: 1em;
-    border-radius: .5em;
+    border-radius: 0.5em;
     border: solid 1px lightgray;
+
+    margin-top: 2em;
   }
 
   .bestellingen form button {
+    margin-top: 3em;
     width: 20em;
     height: 4em;
-    border:none;
+    border: none;
     border-radius: 5em;
   }
 
   .bestellingen main form p:nth-of-type(2) {
-    margin: 0;
+    margin-top: 2em;
     font-size: 14px;
     font-weight: 100;
+  }
+
+  .bestellingen main form p:nth-of-type(2) > a {
+    color: var(--font-zwart);
   }
 
   /* bestellingen footer  */
@@ -1061,57 +1271,98 @@ html {
     color: var(--font-wit);
     line-height: 3em;
   }
-
-
-
-
-
-
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media (min-width: 80em) {
-  header a > img {
+@media (min-width: 120em) {
+  .home header a > img {
     margin: 0;
     padding: 0 0 0 0.5rem;
     width: 4em;
     height: auto;
     position: absolute;
-    left: 3em;
-    top: 0;
+    left: 15em;
+    top: 3.4em;
   }
 
-  section:nth-of-type(3) {
-    margin: 5em 0 0 0;
+  .home header nav:nth-of-type(1) {
+    display: none;
   }
 
-  section:nth-of-type(3) ul {
+  .home header nav:nth-of-type(2) {
+    display: none;
+  }
+
+  .home header nav:nth-of-type(3) {
+    display: block;
+    height: 2.5em;
+    width: 100%;
+    background-color: var(--slidernav);
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .home header nav:nth-of-type(3) ul {
+    margin: 0 2em;
+    display: flex;
+    list-style: none;
+    gap: 1em;
+    font-size: 13px;
+  }
+
+  .home header nav:nth-of-type(4) {
+    display: block;
+    padding: 1em;
+  }
+
+  .home header nav:nth-of-type(4) ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+    font-size: 14px;
+  }
+
+  /* FIGURE 64EM */
+
+  .home main section:nth-of-type(2) {
+    margin: 0 15em;
+  }
+
+  .home main section:nth-of-type(2) figure {
+    background-image: url(../images/groterefoto.jpeg);
+    height: 38em;
+  }
+
+  .home main section:nth-of-type(2) figure h1 {
+    padding-top: 9em;
+    padding-left: 1em;
+    color: var(--font-wit);
+  }
+
+  .home main section:nth-of-type(2) figure figcaption {
+    padding-top: 0;
+    padding-left: 2em;
+    color: var(--font-wit);
+  }
+
+  /* Eerste carrousel */
+
+  .home main section:nth-of-type(3) {
+    margin: 0 15em;
+  }
+
+  .home main section:nth-of-type(3) h2 {
+    margin: 0 0 1em 0;
+    padding: 0;
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
+
+  .home main section:nth-of-type(3) ul {
     display: flex;
     overflow-x: auto;
     overflow-y: hidden;
@@ -1120,60 +1371,49 @@ html {
     overscroll-behavior: none;
 
     gap: 0.5em;
-    padding: 0 0 0 3.5rem;
   }
 
-  section:nth-of-type(3) li {
+  .home main section:nth-of-type(3) li {
     list-style: none;
     margin: 0;
     line-height: 1.5em;
   }
 
-  section:nth-of-type(3) h2 {
-    margin: 0 0 1em 0;
-    padding: 0 0 0 3.5rem;
-    font-size: 1.3rem;
-    font-weight: 500;
-  }
-
-  section:nth-of-type(3) h4 {
+  .home main section:nth-of-type(3) h4 {
     margin: 0;
     font-size: 18px;
     font-weight: 400;
   }
 
-  section:nth-of-type(3) h4 ~ p {
+  .home main section:nth-of-type(3) h4 ~ p {
     font-size: 16px;
     font-weight: 200;
   }
 
-  section:nth-of-type(3) img {
-    width: 25em;
+  .home main section:nth-of-type(3) img {
+    width: 30em;
     margin: 0;
   }
 
-  section:nth-of-type(3) p {
+  .home main section:nth-of-type(3) p {
     margin: 0;
   }
 
-  section:nth-of-type(4) h2 {
+  /* 
+Tweede carrousel */
+
+  .home main section:nth-of-type(4) {
+    margin: 5em 15em;
+  }
+
+  .home main section:nth-of-type(4) h2 {
     font-size: 1.3rem;
     font-weight: 500;
-    padding: 0 0 0 3.5rem;
-  }
-
-  section:nth-of-type(6) {
-    margin-top: 5em;
-  }
-
-  section:nth-of-type(6) h2 {
+    padding: 0;
     margin: 0;
-    padding: 0 0 0 3.5rem;
-    font-size: 1.3rem;
-    font-weight: 500;
   }
 
-  section:nth-of-type(6) ul {
+  .home main section:nth-of-type(4) ul {
     display: flex;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
@@ -1181,32 +1421,117 @@ html {
     overscroll-behavior: none;
 
     gap: 0.5em;
-    padding: 0 0 0 3.5rem;
   }
 
-  section:nth-of-type(6) li {
+  .home main section:nth-of-type(4) li {
     list-style: none;
     margin: 0;
     line-height: 1.5em;
   }
 
-  section:nth-of-type(6) h4 {
+  .home main section:nth-of-type(4) h4 {
     margin: 0;
     font-size: 18px;
     font-weight: 400;
   }
 
-  section:nth-of-type(6) h4 ~ p {
+  .home main section:nth-of-type(4) h4 ~ p {
     font-size: 16px;
     font-weight: 200;
   }
 
-  section:nth-of-type(6) img {
-    width: 25em;
+  .home main section:nth-of-type(4) img {
+    width: 30em;
     margin: 0;
   }
 
-  section:nth-of-type(6) p {
+  .home main section:nth-of-type(4) p {
     margin: 0;
   }
+
+  /* Eerste artikel  */
+
+  .home main article:nth-of-type(1) {
+    margin: 5em 15em;
+  }
+
+  .home main article:nth-of-type(1) ul {
+    flex-direction: row;
+    gap: 1.5em;
+    align-items: baseline;
+  }
+
+  .home main article:nth-of-type(1) ul li {
+    width: 50%;
+  }
+
+  /* 5e section */
+
+  .home main section:nth-of-type(5) {
+    margin: 5em 15em;
+  }
+
+  .home main section:nth-of-type(5) article {
+    background-size: 100%;
+  }
+
+  .home main section:nth-of-type(5) article h4 {
+    margin: 0;
+    left: 1em;
+    top: 1em;
+
+    font-weight: 800;
+    font-size: 30px;
+  }
+
+  .home main section:nth-of-type(5) article a {
+    bottom: 2em;
+  }
+
+  /* Tweede artikel */
+
+  .home main article:nth-of-type(2) {
+    margin: 5em 15em;
+  }
+
+  .home main article:nth-of-type(2) ul {
+    flex-direction: row;
+    gap: 1.5em;
+    align-items: baseline;
+  }
+
+  .home main article:nth-of-type(2) ul li {
+    width: 50%;
+  }
+
+  .home main article:nth-of-type(2) ul li:nth-of-type(2) {
+    background-size: 100%;
+  }
+
+  .home main article:nth-of-type(2) ul li h4 {
+    bottom: 3em;
+  }
+
+  .home main article:nth-of-type(2) ul li a {
+    bottom: 1em;
+  }
+
+  .home main section:nth-of-type(6) {
+    margin: 0 15em;
+  }
+
+  .home main section:nth-of-type(6) ul{
+    height: 36em;
+  }
+
+  .home main section:nth-of-type(6) ul li img {
+    width: 29.3em;
+    height: 35em;
+
+  }
+
+
+
+
+
 }
