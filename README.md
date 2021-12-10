@@ -70,7 +70,7 @@ Bestelpagina Nike
 <summary>uitwerken voor 1e voortgang</summary>
 
 ### Stand van zaken
-<img src="images/nike_pagina.screenshot.png" width="375px" alt="Homepagina van Nike">
+<img src="images/nike_pagina_screenshot.png" width="375px" alt="Homepagina van Nike">
 
 
 ### Agenda voor meeting
