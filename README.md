@@ -12,42 +12,39 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Jij
 
+
 <details>
 <summary>uitwerken voor kick-off werkgroep</summary>
-
 ### Auteur:
-Sanne 't Hooft (vervangen door jouw naam)
-
-#### Je startniveau:
-hier je startniveau (kies uit zwart, rood óf blauw)
-
-#### Je focus:
-hier je focus (kies uit responsive óf surface plane)
+Kevin Speek
  
+ 
+#### Je startniveau:
+Ik denk zelf dat ik op de rode piste zit, omdat ik code ook weer niet onwijs lastig vind (de basis dan). Het is ook niet zo dat ik er onwijs goed in ben, maar als eenmaal bepaalde dingen lukken dan is het natuurlijk tof. 
+ 
+ 
+#### Je focus:
+Ik ga mezelf focussen op zowel responsive als de surface. Ik wil dat mijn website sowieso bruikbaar is op een telefoon en laptop. 
 </details>
-
-
-
 
 
 ## Je website
-
 <details>
 <summary>uitwerken voor kick-off werkgroep</summary>
-
 ### Je opdracht:
-link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
+https://www.nike.com/nl/
 
 #### Screenshot(s) van de eerste pagina (small screen): 
 hier de naam van de pagina  
-<img src="images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+Homepagina Nike 
+<img src="images/Nike_home.jpeg" width="375px" alt="Homepagina van Nike">
 
 #### Screenshot(s) van de tweede pagina (small screen):
 hier de naam van de pagina  
-<img src="images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
- 
-</details>
+Bestelpagina Nike
+<img src="images/Nike_bestellingen.jpeg" width="375px" alt="Bestellingen pagina van Nike">
 
+</details>
 
 
 ## Breakdownschets (week 1)
@@ -56,16 +53,13 @@ hier de naam van de pagina
 <summary>uitwerken na afloop 2e werkgroep</summary>
 
 ### de hele pagina: 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+<img src="images/Nike_volledig_breakdown.png" width="375px" alt="Volledige breakdown Nike pagina.">
 
 ### dynamisch deel (bijv menu): 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+<img src="images/Nike_menu_breakdown.png" width="375px" alt="Slider van aanbiedingen">
 
-### wellicht nog een dynamisch deel (bijv filter): 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
-
 
 
 
@@ -76,17 +70,19 @@ hier de naam van de pagina
 <summary>uitwerken voor 1e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+<img src="images/nike_pagina.screenshot.png" width="375px" alt="Homepagina van Nike">
 
 
 ### Agenda voor meeting
 samen met je groepje opstellen
 
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
+| student 1          | student 2          | student 3    | student 4        |
+| Kevin              | ---                | ---          | ---              |
+|Ik wil graag weten  |
+|hoe ik content      |
+|kan verwerken op    |
+|de background-images|
+
 
 
 ### Verslag van meeting
@@ -135,7 +131,7 @@ samen met je groepje opstellen
 ### Verslag van meeting
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
+- Er is aan mij uitgelegd hoe je van afbeelding kan verwisselen bij een breakpoint. Dit doe je met een background-image. Ik heb dit toegepast op mijn website.
 - punt 2
 - nog een punt
 - ...
@@ -153,20 +149,25 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 
 ### Bevindingen
 Lijst met je bevindingen die in de test naar voren kwamen:
-
-#### Titel eerste bevinding
+ - Er kan overal gekomen wordem d.m.v. tab, maar als je tabt aan het begin van de website en je opent het hamburger menu niet, dan tabt hij door het hamburger menu    i.p.v. gelijk naar de content. 
+ - Hamburger menu klapt niet automatisch dicht als je aan het einde van de hamburger menu door tabt. 
+ 
+ - Blur is moeilijk zichtbaar.
+ - Met de vlekken bril was de content goed te zien.
+ - De website is goed te gebruiken voor iemand met concentratieproblemen 
+ - De webiste is goed te gebruiken voor mensen met een slechte motoriek
+ - De website wordt goed gelezen door de screenreader
+ 
+**#### Tab naar de content.**
 Hier korte omschrijving (met indien nodig een afbeelding)
 
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+Dit probleem kan ik oplossen door een a-element te maken die je direct naar de content brengt.
 
+**#### Hamburger klapt niet automatisch dicht aan het einde van het menu als je door tabt.** 
+ 
+Het menu moet weten dat als er naar de content wordt door getabt, dat het automatisch moet sluiten. Hoe je dat kan regelen weet ik niet precies.
 
-#### Titel tweede bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
-
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
-
-
-#### Titel volgende bevinding. 
+#### Blur is moeilijk leesbaar
 Hier korte omschrijving (met indien nodig een afbeelding)
 
 Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
