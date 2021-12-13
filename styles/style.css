@@ -9,7 +9,8 @@ html {
   display: block;
   font-family: "DM Sans", sans-serif;
   font-family: "Open Sans", sans-serif;
-  cursor: url("data:image/svg+xml,%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='24px' height='24px' viewBox='0 0 512 512' style='enable-background:new 0 0 512.011 512.011;' xml:space='preserve'%3E %3Cpath fill='DeepSkyBlue' d='M434.215,344.467L92.881,3.134c-4.16-4.171-10.914-4.179-15.085-0.019  c-2.011,2.006-3.139,4.731-3.134,7.571v490.667c0.003,4.382,2.685,8.316,6.763,9.92c4.081,1.603,8.727,0.545,11.712-2.667  l135.509-145.92h198.016c5.891,0.011,10.675-4.757,10.686-10.648C437.353,349.198,436.226,346.473,434.215,344.467z'/%3E %3C/svg%3E"), pointer;  
+  cursor: url("data:image/svg+xml,%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='24px' height='24px' viewBox='0 0 512 512' style='enable-background:new 0 0 512.011 512.011;' xml:space='preserve'%3E %3Cpath fill='DeepSkyBlue' d='M434.215,344.467L92.881,3.134c-4.16-4.171-10.914-4.179-15.085-0.019  c-2.011,2.006-3.139,4.731-3.134,7.571v490.667c0.003,4.382,2.685,8.316,6.763,9.92c4.081,1.603,8.727,0.545,11.712-2.667  l135.509-145.92h198.016c5.891,0.011,10.675-4.757,10.686-10.648C437.353,349.198,436.226,346.473,434.215,344.467z'/%3E %3C/svg%3E"),
+    pointer;
   /* BRON CURSOR: https://dev.to/clementgaudiniere/custom-cursor-on-a-webpage-in-pure-css-1dmk */
 }
 
@@ -22,9 +23,8 @@ html {
   --font-wit: white;
 }
 
-a:focus { 
+a:focus {
   border: solid 3px var(--button-hover);
-
 }
 
 @media (min-width: 26em) {
@@ -51,7 +51,7 @@ a:focus {
     transform: none;
   }
 
-  .home header a > svg {
+  .home header a>svg {
     margin: 0;
     padding: 0 0 0.5em;
     width: 4em;
@@ -61,7 +61,7 @@ a:focus {
     top: 0;
   }
 
-  .home header a > svg:hover {
+  .home header a>svg:hover {
     fill: var(--button-hover);
   }
 
@@ -69,6 +69,13 @@ a:focus {
     text-decoration: none;
     color: var(--font-zwart);
   }
+
+
+
+
+
+
+
 
   /* NAV EEN  */
 
@@ -138,7 +145,13 @@ a:focus {
     height: auto;
   }
 
-  /* NAV TWEE */
+
+
+
+
+
+
+  /* NAV HAMBURGER */
 
   .home header nav:nth-of-type(2) {
     overflow: scroll;
@@ -168,7 +181,7 @@ a:focus {
     align-items: center;
   }
 
-  .home header nav:nth-of-type(2) ul:nth-of-type(2)  {
+  .home header nav:nth-of-type(2) ul:nth-of-type(2) {
     font-weight: 500;
   }
 
@@ -186,6 +199,7 @@ a:focus {
     justify-content: center;
     align-items: center;
   }
+
   .home header nav:nth-of-type(2) {
     margin: 0;
     padding: 0;
@@ -296,6 +310,14 @@ a:focus {
     display: none;
   }
 
+
+
+
+
+
+
+
+
   /* GRIJZE SLIDER */
 
   .home main section:nth-of-type(1) {
@@ -312,14 +334,20 @@ a:focus {
     font-size: 10px;
   }
 
+
+
+
+
+
+
+
   /* FIGURE */
 
-
   .home main section:nth-of-type(2) {
-    display:flex;
-    flex-direction:column;
-    
-    height:51em;
+    display: flex;
+    flex-direction: column;
+
+    height: 51em;
     margin: 0 1em;
   }
 
@@ -334,53 +362,59 @@ a:focus {
 
     margin-top: 1em;
   }
-  
+
   .home main section:nth-of-type(2) p {
     font-size: 16px;
     line-height: 1.5;
     font-weight: 300;
   }
 
-  
   .home main section:nth-of-type(2) figure {
-    order:-1;
-    width:100%;
-    height:100%;
-    
-    margin:0;
-    
-    flex-grow:1;
+    order: -1;
+    width: 100%;
+    height: 100%;
+
+    margin: 0;
+
+    flex-grow: 1;
   }
-  
+
   .home main section:nth-of-type(2) figure img {
-    width:100%;
-    height:100%;
-    
-    object-fit:cover;
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
     object-position: 53% 55%;
   }
 
-
-  .home main section:nth-of-type(2)  div a {
-    display:inline-block;
+  .home main section:nth-of-type(2) div a {
+    display: inline-block;
 
     padding: 0.5em 1.75em;
-    background-image:linear-gradient(90deg, var(--button-color1) 50%, var(--button-hover) 50%);
+    background-image: linear-gradient(90deg,
+        var(--button-color1) 50%,
+        var(--button-hover) 50%);
     background-size: 200% 100%;
-    transition: .3s;
+    transition: 0.3s;
     outline: none;
 
     font-weight: 100;
     color: var(--font-wit);
     border-radius: 20px;
     text-decoration: none;
-    margin-top: .5em;
+    margin-top: 0.5em;
     font-size: 16px;
   }
 
-  .home main section:nth-of-type(2)  div a:hover {
+  .home main section:nth-of-type(2) div a:hover {
     background-position: right center;
   }
+
+
+
+
+
+
 
   /* EERSTE CARROUSEL */
 
@@ -423,7 +457,7 @@ a:focus {
     font-weight: 400;
   }
 
-  .home main section:nth-of-type(3) h4 ~ p {
+  .home main section:nth-of-type(3) h4~p {
     font-size: 16px;
     font-weight: 200;
   }
@@ -436,6 +470,12 @@ a:focus {
   .home main section:nth-of-type(3) p {
     margin: 0;
   }
+
+
+
+
+
+
 
   /* TWEE ARTIKELEN NAAST ELKAAR */
 
@@ -467,7 +507,6 @@ a:focus {
     height: 30em;
 
     background-size: 100%;
-    background-position: 0 0, 0 32.5em;
     background-repeat: no-repeat;
   }
 
@@ -484,9 +523,11 @@ a:focus {
     color: var(--font-zwart);
     font-size: 16px;
     font-weight: 400;
-    background-image:linear-gradient(90deg, var(--button-color2) 50%, var(--button-hover) 50%);
+    background-image: linear-gradient(90deg,
+        var(--button-color2) 50%,
+        var(--button-hover) 50%);
     background-size: 200% 100%;
-    transition: .3s;
+    transition: 0.3s;
     outline: none;
 
     padding: 0.5em 1.75em;
@@ -513,6 +554,12 @@ a:focus {
     background-position: 0 0, 0 32.5em;
     list-style: none;
   }
+
+
+
+
+
+
 
   /* TWEEDE CARROUSEL */
 
@@ -554,7 +601,7 @@ a:focus {
     font-weight: 400;
   }
 
-  .home main section:nth-of-type(4) h4 ~ p {
+  .home main section:nth-of-type(4) h4~p {
     font-size: 16px;
     font-weight: 200;
   }
@@ -567,6 +614,12 @@ a:focus {
   .home main section:nth-of-type(4) p {
     margin: 0;
   }
+
+
+
+
+
+
 
   /* 5e section */
 
@@ -604,9 +657,11 @@ a:focus {
     color: var(--font-zwart);
     font-size: 16px;
     font-weight: 400;
-    background-image:linear-gradient(90deg, var(--button-color2) 50%, var(--button-hover) 50%);
+    background-image: linear-gradient(90deg,
+        var(--button-color2) 50%,
+        var(--button-hover) 50%);
     background-size: 200% 100%;
-    transition: .3s;
+    transition: 0.3s;
     outline: none;
 
     padding: 0.5em 1.75em;
@@ -623,7 +678,12 @@ a:focus {
   }
 
 
-  /* TWEEDE ARTICLE  */
+
+
+
+
+
+  /* TWEEDE ARTIKEL  */
 
   .home main article:nth-of-type(2) {
     margin-top: 5em;
@@ -649,11 +709,10 @@ a:focus {
   .home main article:nth-of-type(2) ul li:nth-of-type(1) {
     position: relative;
     margin: 0;
-    background-image: url(../images/metcon.webp);
+    background-image: url(../images/nikerun.jpeg);
     height: 30em;
 
     background-size: 100%;
-    background-position: 0 0, 0 32.5em;
     background-repeat: no-repeat;
   }
 
@@ -670,11 +729,12 @@ a:focus {
     color: var(--font-zwart);
     font-size: 16px;
     font-weight: 400;
-    background-image:linear-gradient(90deg, var(--button-color2) 50%, var(--button-hover) 50%);
+    background-image: linear-gradient(90deg,
+        var(--button-color2) 50%,
+        var(--button-hover) 50%);
     background-size: 200% 100%;
-    transition: .3s;
+    transition: 0.3s;
     outline: none;
-
 
     padding: 0.5em 1.75em;
     border-radius: 20px;
@@ -703,6 +763,10 @@ a:focus {
 
 
 
+
+
+
+
   /* Zesde section  */
 
   .home main section:nth-of-type(6) {
@@ -714,8 +778,6 @@ a:focus {
     font-size: 1.3rem;
     font-weight: 500;
   }
-
-
 
   .home main section:nth-of-type(6) ul {
     list-style: none;
@@ -733,9 +795,8 @@ a:focus {
 
   .home main section:nth-of-type(6) ul li {
     position: relative;
-
   }
-  
+
   .home main section:nth-of-type(6) ul li img {
     width: 27em;
     height: 27em;
@@ -748,9 +809,11 @@ a:focus {
     left: 1em;
 
     padding: 0.5em 1.75em;
-    background-image:linear-gradient(90deg, var(--button-color1) 50%, var(--button-hover) 50%);
+    background-image: linear-gradient(90deg,
+        var(--button-color1) 50%,
+        var(--button-hover) 50%);
     background-size: 200% 100%;
-    transition: .3s;
+    transition: 0.3s;
     outline: none;
 
     font-weight: 400;
@@ -760,23 +823,18 @@ a:focus {
     font-size: 14px;
   }
 
-
   .home main section:nth-of-type(6) ul li a:hover {
     background-position: right center;
     color: var(--font-wit);
   }
 
-  
 
 
 
 
 
 
-
-
-
-  /* footer  */
+  /* FOOTER  */
 
   .home footer {
     background-color: black;
@@ -841,7 +899,7 @@ a:focus {
 
     background-image: url(../images/plusje.jpeg);
     background-repeat: no-repeat;
-    background-size: 1.2em 1.2em;    
+    background-size: 1.2em 1.2em;
     background-position: right center;
   }
 
@@ -862,13 +920,14 @@ a:focus {
 
     background-image: url(../images/plusje.jpeg);
     background-repeat: no-repeat;
-    background-size: 1.2em 1.2em;    
+    background-size: 1.2em 1.2em;
     background-position: right center;
   }
 
   .home footer section:nth-of-type(3) {
     margin: 20em 1em 0 1em;
   }
+
   .home footer section:nth-of-type(3) ul {
     padding: 0.5em;
     display: flex;
@@ -900,7 +959,7 @@ a:focus {
   }
 
   .home footer section:nth-of-type(4) ul {
-    padding: .5em;
+    padding: 0.5em;
   }
 
   .home footer section:nth-of-type(4) ul li {
@@ -917,501 +976,21 @@ a:focus {
   .home footer section:nth-of-type(6) {
     display: none;
   }
-
-
-
-
-
-
-
-
-
-
-
-  /* Bestellingen pagina */
-
-  body.bestellingen {
-    margin: 0;
-    padding: 0;
-  }
-
-  .bestellingen header {
-    position: relative;
-    align-items: center;
-  }
-
-  .bestellingen header a.content {
-    color: purple;
-    position: absolute;
-    top: 0.5em;
-    left: 2em;
-    display: block;
-    transform: translateX(calc(-100% - 2em));
-  }
-
-  .bestellingen header a.content:focus {
-    transform: none;
-  }
-
-  .bestellingen header a > svg {
-    margin: 0;
-    padding: 0 0 0.5em;
-    width: 4em;
-    height: auto;
-    position: absolute;
-    left: 1em;
-    top: 0;
-  }
-
-  .bestellingen header a > svg:hover {
-    fill: var(--button-hover);
-  }
-
-  .bestellingen header a {
-    text-decoration: none;
-    color: var(--font-zwart);
-  }
-
-  /* NAV EEN  */
-
-  .bestellingen header nav:nth-of-type(1) {
-    margin-top: 1em;
-    display: flex;
-    justify-content: flex-end;
-    gap: 2em;
-    margin-right: 1em;
-  }
-
-  .bestellingen header nav:nth-of-type(1) button {
-    position: relative;
-    width: 2.5em;
-    height: 2.5em;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 100;
-    border: none;
-    background-color: transparent;
-  }
-
-  .bestellingen header nav:nth-of-type(1) button span {
-    display: block;
-    width: 50%;
-    height: 1px;
-    background-color: black;
-
-    position: absolute;
-    transition: 0.3s;
-  }
-
-  .bestellingen header nav:nth-of-type(1) button span:nth-of-type(1) {
-    transform: translateY(-5px);
-  }
-
-  .bestellingen header nav:nth-of-type(1) button span:nth-of-type(3) {
-    transform: translateY(5px);
-  }
-
-  .bestellingen header.toonMenu nav:nth-of-type(2) {
-    transform: translateX(50%);
-    /* opacity: 0; */
-  }
-
-  .bestellingen header.toonMenu nav:nth-of-type(1) button span {
-    background-color: red;
-  }
-
-  .bestellingen header.toonMenu nav:nth-of-type(1) button span:nth-of-type(1) {
-    transform: rotate(45deg);
-  }
-
-  .bestellingen header.toonMenu nav:nth-of-type(1) button span:nth-of-type(2) {
-    opacity: 0;
-  }
-
-  .bestellingen header.toonMenu nav:nth-of-type(1) button span:nth-of-type(3) {
-    transform: rotate(-45deg);
-  }
-
-  .bestellingen header nav:nth-of-type(1) svg {
-    display: flex;
-    width: 1.3em;
-    height: auto;
-  }
-
-  /* NAV TWEE */
-
-  .bestellingen header nav:nth-of-type(2) {
-    overflow: scroll;
-    overscroll-behavior: contain;
-  }
-
-  .bestellingen header nav:nth-of-type(2) ul:nth-of-type(1) {
-    padding: 1em 2.5em 0;
-    list-style: none;
-    line-height: 2.3em;
-
-    font-size: 1.2em;
-  }
-
-  .bestellingen nav:nth-of-type(2) ul:nth-of-type(2) li:first-of-type {
-    background-image: url(../images/jordan-2.svg);
-    margin: 0;
-    height: 2.9em;
-    width: 9em;
-
-    background-size: 2em 1.5em;
-    background-position: 0 center;
-    background-repeat: no-repeat;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .bestellingen header nav:nth-of-type(2) ul:nth-of-type(2)  {
-    font-weight: 500;
-  }
-
-  .bestellingen header nav:nth-of-type(2) ul:nth-of-type(2) li:last-of-type {
-    background-image: url(../images/converse.svg);
-    margin: 0;
-    height: 5em;
-    width: 10em;
-
-    background-size: 2em 1.5em;
-    background-position: 0 center;
-    background-repeat: no-repeat;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .bestellingen header nav:nth-of-type(2) {
-    margin: 0;
-    padding: 0;
-    background: white;
-    list-style: none;
-
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-
-    transform: translatex(100%);
-    transition: 0.3s;
-
-    font-size: 15px;
-    line-height: 3em;
-    font-weight: 500;
-  }
-
-  .bestellingen header nav:nth-of-type(2) section {
-    width: 50%;
-    margin-top: 2em;
-    padding: 0 2.5em 0;
-    line-height: 1.2em;
-  }
-
-  .bestellingen header nav:nth-of-type(2) section p {
-    margin-bottom: 3em;
-    font-size: 1em;
-    color: rgb(139, 139, 139);
-  }
-
-  .bestellingen header nav:nth-of-type(2) section a:first-of-type {
-    padding: 0.6em 1.5em;
-    background-color: var(--button-color1);
-    font-weight: 100;
-    color: var(--font-wit);
-    border-radius: 20px;
-    text-decoration: none;
-    margin-top: 2em;
-    font-size: 14px;
-    font-weight: 400;
-  }
-
-  .bestellingen header nav:nth-of-type(2) section a:last-of-type {
-    padding: 0.6em 1.5em;
-    background-color: var(--button-color2);
-    font-weight: 100;
-    color: var(--button-color1);
-    border-radius: 20px;
-    text-decoration: none;
-    margin-top: 2em;
-    font-size: 14px;
-    font-weight: 400;
-    border: solid 1px black;
-  }
-
-  .bestellingen header nav:nth-of-type(2) ul:nth-of-type(3) {
-    padding: 3em 2.5em 0;
-    list-style: none;
-  }
-
-  .bestellingen header nav:nth-of-type(2) ul:nth-of-type(3) li {
-    display: flex;
-    align-items: center;
-    gap: 1em;
-    list-style: none;
-  }
-
-  .bestellingen header nav:nth-of-type(2) ul:nth-of-type(3) li:nth-of-type(1) {
-    background-image: url(../images/winkelmandje.svg);
-    background-repeat: no-repeat;
-    background-position: 0 center;
-    background-size: 1.5em auto;
-
-    padding-left: 2.5em;
-  }
-
-  .bestellingen header nav:nth-of-type(2) ul:nth-of-type(3) li:nth-of-type(2) {
-    background-image: url(../images/bestelling_icon.svg);
-    background-repeat: no-repeat;
-    background-position: 0 center;
-    background-size: 1.5em auto;
-
-    padding-left: 2.5em;
-  }
-
-  .bestellingen header nav:nth-of-type(2) ul:nth-of-type(3) li:nth-of-type(3) {
-    background-image: url(../images/help_icon.svg);
-    background-repeat: no-repeat;
-    background-position: 0 center;
-    background-size: 1.5em auto;
-
-    padding-left: 2.5em;
-  }
-
-  .bestellingen header nav:nth-of-type(2) ul:nth-of-type(3) li a {
-    text-decoration: none;
-    color: var(--font-zwart);
-  }
-
-  .bestellingen header nav:nth-of-type(3) {
-    display: none;
-  }
-
-  .bestellingen header nav:nth-of-type(4) {
-    display: none;
-  }
-
-
-
-/* BESTELLINGEN MAIN */
-
-  .bestellingen main section:nth-of-type(1) {
-    padding: 3.125rem 0 0;
-  }
-
-  .bestellingen main form {
-    width: 19.75rem;
-    justify-content: center;
-    margin: 0 auto;
-    text-align: center;
-  }
-
-  .bestellingen main form h3 {
-    margin: 0;
-    font-size: 20px;
-    color: var(--font-zwart);
-    font-weight: 500;
-  }
-
-  .bestellingen main form p:nth-of-type(1) {
-    margin: 0;
-    font-size: 14px;
-    font-weight: 100;
-  }
-
-  .bestellingen form section:nth-of-type(1) input {
-    width: 20em;
-    height: 4em;
-    padding-left: 1em;
-    border-radius: 0.5em;
-    border: solid 1px lightgray;
-  }
-
-  .bestellingen form section:nth-of-type(2) input {
-    width: 20em;
-    height: 4em;
-    padding-left: 1em;
-    border-radius: 0.5em;
-    border: solid 1px lightgray;
-
-    margin-top: 2em;
-  }
-
-  .bestellingen form button {
-    margin-top: 3em;
-    width: 20em;
-    height: 4em;
-    border: none;
-    border-radius: 5em;
-  }
-
-  .bestellingen main form p:nth-of-type(2) {
-    margin-top: 2em;
-    font-size: 14px;
-    font-weight: 100;
-  }
-
-  .bestellingen main form p:nth-of-type(2) > a {
-    color: var(--font-zwart);
-  }
-
-  /* bestellingen footer  */
-
-  .bestellingen footer {
-    background-color: black;
-    margin-top: 10em;
-    height: 60em;
-  }
-
-  .bestellingen footer a {
-    text-decoration: none;
-    color: var(--font-wit);
-  }
-
-  .bestellingen footer section:nth-of-type(1) {
-    height: 10em;
-    background-color: black;
-    display: block;
-    position: relative;
-  }
-
-  .bestellingen footer section:nth-of-type(1) ul {
-    justify-content: flex-start;
-    position: absolute;
-    top: 1em;
-    padding: 0.5em;
-    margin: 1em;
-  }
-
-  .bestellingen footer section:nth-of-type(1) ul li {
-    list-style-type: none;
-    font-size: 14px;
-    color: var(--font-wit);
-    line-height: 2.3em;
-  }
-
-  .bestellingen hr {
-    color: white;
-    height: 0.125rem;
-    width: 95%;
-    position: absolute;
-    top: 15em;
-    left: 1em;
-  }
-
-  .bestellingen footer section:nth-of-type(2) {
-    position: relative;
-  }
-
-  .bestellingen footer section:nth-of-type(2) button:nth-of-type(1) {
-    display: block;
-    padding: 0.5em;
-    margin: 1em;
-    position: absolute;
-    top: 7.5em;
-    width: 95%;
-    color: var(--font-wit);
-    background-color: transparent;
-    border: none;
-    align-items: flex-start;
-    text-align: left;
-    text-transform: uppercase;
-    cursor: pointer;
-
-    background-image: url(../images/plusje.jpeg);
-    background-repeat: no-repeat;
-    background-size: 1.2em 1.2em;    
-    background-position: right center;
-  }
-
-  .bestellingen footer section:nth-of-type(2) button:nth-of-type(2) {
-    display: block;
-    padding: 0.5em;
-    margin: 1em;
-    position: absolute;
-    top: 14em;
-    width: 95%;
-    color: var(--font-wit);
-    background-color: transparent;
-    border: none;
-    align-items: flex-start;
-    text-align: left;
-    text-transform: uppercase;
-    cursor: pointer;
-
-    background-image: url(../images/plusje.jpeg);
-    background-repeat: no-repeat;
-    background-size: 1.2em 1.2em;    
-    background-position: right center;
-  }
-
-  .bestellingen footer section:nth-of-type(3) {
-    margin: 20em 1em 0 1em;
-  }
-  .bestellingen footer section:nth-of-type(3) ul {
-    padding: 0.5em;
-    display: flex;
-    justify-content: flex-start;
-    gap: 0.5em;
-  }
-
-  .bestellingen footer section:nth-of-type(3) ul li {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 3em;
-    height: 3em;
-    border-radius: 50%;
-    background-color: lightgray;
-  }
-
-  .bestellingen footer section:nth-of-type(3) ul li img {
-    width: 2em;
-    height: 2em;
-  }
-
-  .bestellingen footer section:nth-of-type(3) ul li:hover {
-    background-color: var(--button-hover);
-  }
-
-  .bestellingen footer section:nth-of-type(4) {
-    margin: 0 1em;
-  }
-
-  .bestellingen footer section:nth-of-type(4) ul {
-    padding: .5em;
-  }
-
-  .bestellingen footer section:nth-of-type(4) ul li {
-    list-style-type: none;
-    font-size: 14px;
-    color: var(--font-wit);
-    line-height: 3em;
-  }
-
-  .bestellingen footer section:nth-of-type(5) {
-    display: none;
-  }
-
-  .bestellingen footer section:nth-of-type(6) {
-    display: none;
-  }
-
 }
 
 
 
 
 
+
+
+
+
+
+
+
 @media (min-width: 120em) {
-  .home header a > svg {
+  .home header a>svg {
     margin: 0;
     padding: 0 0 0 0.5rem;
     width: 4em;
@@ -1422,10 +1001,9 @@ a:focus {
     z-index: 150;
   }
 
-  .home header a > svg:hover {
+  .home header a>svg:hover {
     fill: var(--button-hover);
   }
-
 
   .home header nav:nth-of-type(1) {
     display: none;
@@ -1436,6 +1014,10 @@ a:focus {
   }
 
 
+
+
+
+
   /* DERDE NAV */
 
   .home header nav:nth-of-type(3) {
@@ -1444,7 +1026,7 @@ a:focus {
     width: 100%;
     background-color: var(--slidernav);
 
-    display: flex; 
+    display: flex;
     align-items: center;
     justify-content: space-between;
   }
@@ -1457,7 +1039,6 @@ a:focus {
     gap: 1em;
     align-items: center;
   }
-  
 
   .home header nav:nth-of-type(3) ul:nth-of-type(2) {
     display: flex;
@@ -1475,6 +1056,11 @@ a:focus {
   }
 
 
+
+
+
+
+
   /* 4e NAV */
 
   .home header nav:nth-of-type(4) {
@@ -1485,7 +1071,6 @@ a:focus {
     display: flex;
     align-items: center;
     justify-content: center;
-    
   }
 
   .home header nav:nth-of-type(4) ul {
@@ -1504,7 +1089,7 @@ a:focus {
   }
 
   .home header nav:nth-of-type(4) li a::after {
-    content: '';
+    content: "";
     position: absolute;
     bottom: 0;
     left: 0;
@@ -1520,9 +1105,9 @@ a:focus {
     transform: scale(0);
     transform-origin: center;
   }
-  
+
   .home header nav:nth-of-type(4) li a:hover::after,
-  .home header nav:nth-of-type(4) li a:focus::after{
+  .home header nav:nth-of-type(4) li a:focus::after {
     transform: scale(1);
   }
 
@@ -1532,12 +1117,11 @@ a:focus {
     position: absolute;
     right: 0;
     align-items: center;
-
   }
 
   .home header nav:nth-of-type(4) ul:nth-of-type(2) img {
-      width: 1.5em;
-      height: auto;
+    width: 1.5em;
+    height: auto;
   }
 
   .home header nav:nth-of-type(4) input {
@@ -1545,16 +1129,19 @@ a:focus {
     width: 12em;
 
     border-radius: 5em;
-    border:none;
+    border: none;
     background-color: var(--slidernav);
     background-image: url(../images/zoeken.svg);
-    
+
     background-repeat: no-repeat;
     background-size: 1.5em auto;
-    background-position: .5em center;
+    background-position: 0.5em center;
 
     padding-left: 2.5em;
+    position: absolute;
+    right: 8em;
   }
+
 
   /* EERSTE SECTION */
 
@@ -1563,28 +1150,33 @@ a:focus {
   }
 
 
+
+
   /* FIGURE 64EM */
 
-	.home main section:nth-of-type(2) {
-    position:relative;
+  .home main section:nth-of-type(2) {
+    position: relative;
     margin: 0 15em;
     height: 38em;
   }
-  
-  .home main section:nth-of-type(2)  h1 {
+
+  .home main section:nth-of-type(2) h1 {
     color: var(--font-wit);
   }
 
-  .home main section:nth-of-type(2)  p {
+  .home main section:nth-of-type(2) p {
     color: var(--font-wit);
   }
 
-  .home main section:nth-of-type(2) > div {
-		position:absolute;
-		left:1em;
-		bottom:1em;
+  .home main section:nth-of-type(2)>div {
+    position: absolute;
+    left: 1em;
+    bottom: 1em;
   }
-  
+
+
+
+
 
   /* Eerste carrousel */
 
@@ -1599,7 +1191,10 @@ a:focus {
 
 
 
-/* Tweede carrousel */
+
+
+
+  /* Tweede carrousel */
 
   .home main section:nth-of-type(4) {
     margin: 5em 15em;
@@ -1609,6 +1204,10 @@ a:focus {
     width: 30em;
     margin: 0;
   }
+
+
+
+
 
 
   /* Eerste artikel  */
@@ -1626,6 +1225,9 @@ a:focus {
   .home main article:nth-of-type(1) ul li {
     width: 50%;
   }
+
+
+
 
   /* 5e section */
 
@@ -1650,6 +1252,9 @@ a:focus {
     bottom: 2em;
   }
 
+
+
+
   /* Tweede artikel */
 
   .home main article:nth-of-type(2) {
@@ -1668,6 +1273,7 @@ a:focus {
 
   .home main article:nth-of-type(2) ul li:nth-of-type(2) {
     background-size: 100%;
+    background-position: 0 0, 0 32.5em;
   }
 
   .home main article:nth-of-type(2) ul li h4 {
@@ -1678,11 +1284,17 @@ a:focus {
     bottom: 1em;
   }
 
+
+
+
+
+
+
   .home main section:nth-of-type(6) {
     margin: 0 15em;
   }
 
-  .home main section:nth-of-type(6) ul{
+  .home main section:nth-of-type(6) ul {
     height: 36em;
   }
 
@@ -1709,11 +1321,13 @@ a:focus {
 
 
 
-/* FOOTER DESKTOP */
+
+
+
+  /* FOOTER DESKTOP */
   .home footer {
     height: 22em;
   }
-
 
   .home footer section:nth-of-type(5) {
     margin: 0 20em;
@@ -1731,18 +1345,18 @@ a:focus {
     margin: 0;
   }
 
-  .home footer section:nth-of-type(5) ul:nth-of-type(1) li a{
+  .home footer section:nth-of-type(5) ul:nth-of-type(1) li a {
     font-size: 12px;
     font-weight: 500;
   }
 
-  .home footer section:nth-of-type(5) ul:nth-of-type(2) li a{
+  .home footer section:nth-of-type(5) ul:nth-of-type(2) li a {
     font-size: 12px;
     font-weight: 100;
     color: rgb(129, 129, 129);
   }
 
-  .home footer section:nth-of-type(5) ul:nth-of-type(3) li a{
+  .home footer section:nth-of-type(5) ul:nth-of-type(3) li a {
     font-size: 12px;
     font-weight: 100;
     color: rgb(129, 129, 129);
@@ -1760,7 +1374,7 @@ a:focus {
     color: var(--font-wit);
   }
 
-  .home footer section:nth-of-type(5) ul:nth-of-type(4) li img {
+  .home footer section:nth-of-type(5) ul:nth-of-type(4) li a img {
     width: 1.3em;
     height: 1.3em;
   }
@@ -1791,343 +1405,13 @@ a:focus {
     justify-content: flex-end;
   }
 
-  .home footer section:nth-of-type(6) ul{
+  .home footer section:nth-of-type(6) ul {
     display: flex;
     gap: 1em;
   }
-  .home footer section:nth-of-type(6) ul li a{
+
+  .home footer section:nth-of-type(6) ul li a {
     font-size: 10px;
     color: rgb(129, 129, 129);
   }
-
-
-
-
-
-
-
-
-  /* Bestellingen */
-
-  .bestellingen header a > svg {
-    margin: 0;
-    padding: 0 0 0 0.5rem;
-    width: 4em;
-    height: auto;
-    position: absolute;
-    left: 15em;
-    top: 3.4em;
-    z-index: 150;
-  }
-
-  .bestellingen header a > svg:hover {
-    fill: var(--button-hover);
-  }
-  
-
-  .bestellingen header nav:nth-of-type(1) {
-    display: none;
-  }
-
-  .bestellingen header nav:nth-of-type(2) {
-    display: none;
-  }
-
-
-  .bestellingen header nav:nth-of-type(3) {
-    display: block;
-    height: 2.5em;
-    width: 100%;
-    background-color: var(--slidernav);
-
-    display: flex; 
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .bestellingen header nav:nth-of-type(3) ul:nth-of-type(1) {
-    display: flex;
-    list-style: none;
-    margin-left: 15em;
-    padding: 0;
-    gap: 1em;
-    align-items: center;
-  }
-  
-
-  .bestellingen header nav:nth-of-type(3) ul:nth-of-type(2) {
-    display: flex;
-    list-style: none;
-    gap: 1em;
-    font-size: 13px;
-    margin-right: 18em;
-    padding: 0;
-  }
-
-  .bestellingen header nav:nth-of-type(3) img {
-    width: 1.5em;
-    height: auto;
-    justify-content: flex-start;
-  }
-
-
-  /* 4e NAV */
-
-  .bestellingen header nav:nth-of-type(4) {
-    position: relative;
-    padding: 1em 0;
-    margin: 0 15em;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-  }
-
-  .bestellingen header nav:nth-of-type(4) ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    gap: 2em;
-    font-size: 14px;
-  }
-
-  .bestellingen header nav:nth-of-type(4) ul li a {
-    display: block;
-    position: relative;
-    padding: 0.2em 0;
-  }
-
-  .bestellingen header nav:nth-of-type(4) ul li a::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 0.1em;
-    background-color: var(--button-hover);
-    opacity: 0;
-    transition: opacity 300ms, transform 300ms;
-  }
-
-  .bestellingen header nav:nth-of-type(4) ul li a::after {
-    opacity: 1;
-    transform: scale(0);
-    transform-origin: center;
-  }
-  
-  .bestellingen header nav:nth-of-type(4) ul li a:hover::after,
-  .bestellingen header nav:nth-of-type(4) ul li a:focus::after{
-    transform: scale(1);
-  }
-
-  /* BRON: https://css-irl.info/animating-underlines/ */
-
-  .bestellingen header nav:nth-of-type(4) ul:nth-of-type(2) {
-    position: absolute;
-    right: 0;
-    align-items: center;
-
-  }
-
-  .bestellingen header nav:nth-of-type(4) ul:nth-of-type(2) img {
-      width: 1.5em;
-      height: auto;
-  }
-
-  .bestellingen header nav:nth-of-type(4) input {
-    height: 3em;
-    width: 12em;
-
-    border-radius: 5em;
-    border:none;
-    background-color: var(--slidernav);
-    background-image: url(../images/zoeken.svg);
-    
-    background-repeat: no-repeat;
-    background-size: 1.5em auto;
-    background-position: .5em center;
-
-    padding-left: 2.5em;
-  }
-
-
-/* 
-FOOTER DESKTOP */
-
-
-.bestellingen footer section:nth-of-type(1) {
-  display: none;
 }
-
-.bestellingen footer section:nth-of-type(2) {
-  display: none;
-}
-
-.bestellingen footer section:nth-of-type(3) {
-  display: none;
-}
-
-.bestellingen footer section:nth-of-type(4) {
-  display: none;
-}
-
-  .bestellingen footer {
-    height: 22em;
-  }
-
-
-  .bestellingen footer section:nth-of-type(5) {
-    margin: 0 20em;
-    padding: 2.5em 2.5em 0 2.5em;
-    display: flex;
-    gap: 3em;
-
-    position: relative;
-  }
-
-  .bestellingen footer section:nth-of-type(5) ul {
-    padding: 0;
-    list-style: none;
-    line-height: 2em;
-    margin: 0;
-  }
-
-  .bestellingen footer section:nth-of-type(5) ul:nth-of-type(1) li a{
-    font-size: 12px;
-    font-weight: 500;
-  }
-
-  .bestellingen footer section:nth-of-type(5) ul:nth-of-type(2) li a{
-    font-size: 12px;
-    font-weight: 100;
-    color: rgb(129, 129, 129);
-  }
-
-  .bestellingen footer section:nth-of-type(5) ul:nth-of-type(3) li a{
-    font-size: 12px;
-    font-weight: 100;
-    color: rgb(129, 129, 129);
-  }
-
-  .bestellingen footer section:nth-of-type(5) ul:nth-of-type(2) li {
-    font-size: 14px;
-    font-weight: 500;
-    color: var(--font-wit);
-  }
-
-  .bestellingen footer section:nth-of-type(5) ul:nth-of-type(3) li {
-    font-size: 14px;
-    font-weight: 500;
-    color: var(--font-wit);
-  }
-
-  .bestellingen footer section:nth-of-type(5) ul:nth-of-type(4) li img {
-    width: 1.3em;
-    height: 1.3em;
-  }
-
-  .bestellingen footer section:nth-of-type(5) ul:nth-of-type(4) {
-    display: flex;
-    gap: 0.5em;
-    margin: 0;
-
-    position: absolute;
-    top: 2.5em;
-    right: 2.5em;
-  }
-
-  .bestellingen footer section:nth-of-type(5) ul:nth-of-type(4) li {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 2.7em;
-    height: 2.7em;
-    border-radius: 50%;
-    background-color: lightgray;
-  }
-
-  .bestellingen footer section:nth-of-type(6) {
-    margin: 0 20em;
-    display: flex;
-    justify-content: flex-end;
-  }
-
-  .bestellingen footer section:nth-of-type(6) ul{
-    display: flex;
-    gap: 1em;
-  }
-
-  .bestellingen footer section:nth-of-type(6) ul li a{
-    font-size: 10px;
-    color: rgb(129, 129, 129);
-  }
-
-}
-
- 
-
-  /* body.order {
-    text-align:center;
-    background: var(--button-hover);
-    color:#555;
-    font-weight:300;
-    font-size:32px;
-    padding-top:40vh;
-    height:100vh;
-    overflow:hidden;
-    -webkit-backface-visibility: hidden;
-    -webkit-perspective: 1000;
-    -webkit-transform: translate3d(0,0,0);
-  }
-
-  .order section {
-    margin: 0 auto;
-    width: 50%;
-  }
-  
-  div {
-    display:inline-block;
-    overflow:hidden;
-    white-space:wrap;
-  }
-  
-  div:first-of-type {   
-    animation: showup 7s infinite;
-  }
-  
-  div:last-of-type {
-    width:0px;
-    animation: reveal 7s infinite;
-  }
-  
-  div:last-of-type span {
-    margin-left:-355px;
-    animation: slidein 7s infinite;
-  }
-  
-  @keyframes showup {
-      0% {opacity:0;}
-      20% {opacity:1;}
-      80% {opacity:1;}
-      100% {opacity:0;}
-  }
-  
-  @keyframes slidein {
-      0% { margin-left:-800px; }
-      20% { margin-left:-800px; }
-      35% { margin-left:0px; }
-      100% { margin-left:0px; }
-  }
-  
-  @keyframes reveal {
-      0% {opacity:0;width:0px;}
-      20% {opacity:1;width:0px;}
-      30% {width:355px;}
-      80% {opacity:1;}
-      100% {opacity:0;width:355px;}
-  }
-  
-  
-
