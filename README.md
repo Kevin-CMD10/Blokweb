@@ -76,10 +76,10 @@ Bestelpagina Nike
 ### Agenda voor meeting
 samen met je groepje opstellen
 
-| student 1          | student 2          | student 3    | student 4        |
-| Kevin              | ---                | ---          | ---              |
-|Ik wil graag weten  |
-|hoe ik content      |
+| Kevin              | Xiao Nan           | student 3    | student 4        |
+| ---                | ---                | ---          | ---              |
+|Ik wil graag weten  | Aria Label
+|hoe ik content      | Feedback HTML
 |kan verwerken op    |
 |de background-images|
 
@@ -88,14 +88,9 @@ samen met je groepje opstellen
 ### Verslag van meeting
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
-- nog een punt
-- ...
+- Dat kan door position te gebruiken. Position:relative op de parent en position:absolute op de child
 
 </details>
-
-
 
 
 
@@ -114,16 +109,17 @@ Het maken van het hamburger menu verliep goed. De website responsive maken is we
 ### Agenda voor meeting
 samen met je groepje opstellen
 
-| student 1              | student 2          | student 3    | student 4        |
- Graag meekijken 
- naar het responsive
- maken van de website.
- 
- - sections schalen niet mee 
- - nieuwe afbeelding bij 
- desktop breakpoint
- 
- Scroll over doet het niet.
+| Kevin                        | Xiao Nan           | student 3    | student 4        |
+| ---                          | ---                | ---          | ---              |
+| Graag meekijken              | slider boven	      |
+| naar het responsive          | randje foto	       |
+| maken van de website.        | js + aanspreken    |
+|                              |
+| sections schalen niet mee    |
+| nieuwe afbeelding bij        |
+| desktop breakpoint           |
+|                              |
+| Scroll over doet het niet.   |
  
  
 
@@ -132,13 +128,9 @@ samen met je groepje opstellen
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
 - Er is aan mij uitgelegd hoe je van afbeelding kan verwisselen bij een breakpoint. Dit doe je met een background-image. Ik heb dit toegepast op mijn website.
-- punt 2
-- nog een punt
-- ...
+- Voor het responsive maken van de website heb ik gekeken naar de opdrachten uit de lessen.
 
 </details>
-
-
 
 
 
