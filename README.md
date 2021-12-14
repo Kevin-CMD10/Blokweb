@@ -147,22 +147,24 @@ Lijst met je bevindingen die in de test naar voren kwamen:
  - Blur is moeilijk zichtbaar.
  - Met de vlekken bril was de content goed te zien.
  - De website is goed te gebruiken voor iemand met concentratieproblemen 
- - De webiste is goed te gebruiken voor mensen met een slechte motoriek
+ - De webiste is goed te gebruiken voor mensen met een slechte motoriek. Al weet ik niet precies wat de bedoeling was, omdat je met twee vingers de website moest besturen, maar gewoon nog altijd met één vinger door de website kon gaan. 
  - De website wordt goed gelezen door de screenreader
  
 **#### Tab naar de content.**
 Hier korte omschrijving (met indien nodig een afbeelding)
 
 Dit probleem kan ik oplossen door een a-element te maken die je direct naar de content brengt.
+ 
+ <img src="images/directcontent.png" width="375px" alt="Screenshot van de oplossing">
+ 
 
 **#### Hamburger klapt niet automatisch dicht aan het einde van het menu als je door tabt.** 
  
 Het menu moet weten dat als er naar de content wordt door getabt, dat het automatisch moet sluiten. Hoe je dat kan regelen weet ik niet precies.
 
 #### Blur is moeilijk leesbaar
-Hier korte omschrijving (met indien nodig een afbeelding)
 
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+Voor de problemen met blur is het denk ik goed om al het content heel erg te vergroten, zodat de gebruiker het beter kan zien.
 
 
 #### Titel nog een bevinding. 
@@ -171,7 +173,6 @@ Hier korte omschrijving (met indien nodig een afbeelding)
 Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
 
 </details>
-
 
 
 
@@ -189,20 +190,21 @@ hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je we
 ### Agenda voor meeting
 samen met je groepje opstellen
 
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
+| Kevin                      | Xiao Nan      | Bram    |
+| ---                        | ---           | ---     |        
+| De foto main foto          | JS            | @Media  |
+ schaalde niet goed          | Foto          |         |
+ mee en de tekst daaronder   |               |         | 
+ ook niet                    |               |         |
+| Overscroll-behavior        |               |         |
+| ...                        | ...           | ...     |
 
 
 ### Verslag van meeting
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
-- nog een punt
-- ...
+- Het probleem met het meeschalen is opgelost tijdens de meeting
+- De oversroll-behavior gaat Sanne nog voor mij uitzoeken
 
 </details>
 
@@ -216,11 +218,15 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 <summary>uitwerken voor eindgesprek</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Over het algemeen vind ik dat ik een mooie eindpresentatie heb neergezet. Ik heb zoveel mogelijk geprobeerd om het zelf allemaal uit te zoeken, maar bij bepaalde punten heb ik toch om hulp gevraagd. De lessen waren zeer informatief en hebben mij voor een groot deel geholpen om er een mooi eindresultaat van te maken. Door zelf te doen en te onderzoeken heb ik veel geleerd.
 
 ### Screenshot(s)
 
-hier screenshot(s) van je eindresultaat
+ <img src="images/nikemobiel.png" width="375px" alt="Nike mobiel">
+ <img src="images/nikedesktop.png" width="375px" alt="Nike desktop">
+ <img src="images/nikebestellingenmb.png" width="375px" alt="Bestellingen mobiel">
+ <img src="images/nikebestellingendk.png" width="375px" alt="Bestellingen desktop">
+
 
 </details>
 
@@ -235,8 +241,9 @@ hier screenshot(s) van je eindresultaat
 
 Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
-1. bron 1
-2. bron 2
-3. ...
-
+1. https://codepen.io/shooft/pen/wvrMdja. // Link om direct naar de content te gaan.
+2. https://codepen.io/grohit/pen/mdJqEzK  // Pagina na het verzenden van het formulier
+3. https://css-irl.info/animating-underlines/ // Underline navigatie
+4. https://fonts.google.com/specimen/DM+Sans // Google Fonts
+5. 
 </details>
