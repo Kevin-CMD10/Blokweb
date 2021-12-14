@@ -224,8 +224,8 @@ Over het algemeen vind ik dat ik een mooie eindpresentatie heb neergezet. Ik heb
 
  <img src="images/nikemobiel.png" width="375px" alt="Nike mobiel">
  <img src="images/nikedesktop.png" width="375px" alt="Nike desktop">
- <img src="images/nikebestellingenmb.png" width="375px" alt="Bestellingen mobiel">
- <img src="images/nikebestellingendk.png" width="375px" alt="Bestellingen desktop">
+ <img src="images/nikebestellingenmb.png" width="1000px" alt="Bestellingen mobiel">
+ <img src="images/nikebestellingendk.png" width="1000px" alt="Bestellingen desktop">
 
 
 </details>
