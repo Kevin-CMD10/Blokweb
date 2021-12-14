@@ -55,7 +55,7 @@ a:focus {
     transform: none;
   }
 
-  .home header a > svg {
+  .home header a>svg {
     margin: 0;
     padding: 0 0 0.5em;
     width: 4em;
@@ -65,7 +65,7 @@ a:focus {
     top: 0;
   }
 
-  .home header a > svg:hover {
+  .home header a>svg:hover {
     fill: var(--button-hover);
   }
 
@@ -74,7 +74,7 @@ a:focus {
     color: var(--font-zwart);
   }
 
-  /* NAV EEN  */
+  /* NAV*/
 
   .home header nav:nth-of-type(1) {
     margin-top: 1em;
@@ -368,11 +368,9 @@ a:focus {
     display: inline-block;
 
     padding: 0.5em 1.75em;
-    background-image: linear-gradient(
-      90deg,
-      var(--button-color1) 50%,
-      var(--button-hover) 50%
-    );
+    background-image: linear-gradient(90deg,
+        var(--button-color1) 50%,
+        var(--button-hover) 50%);
     background-size: 200% 100%;
     transition: 0.3s;
     outline: none;
@@ -389,7 +387,12 @@ a:focus {
     background-position: right center;
   }
 
+ 
+ 
+ 
   /* EERSTE CARROUSEL */
+
+
 
   .home main section:nth-of-type(3) {
     margin: 5em 1em 1em 1em;
@@ -430,7 +433,7 @@ a:focus {
     font-weight: 400;
   }
 
-  .home main section:nth-of-type(3) h4 ~ p {
+  .home main section:nth-of-type(3) h4~p {
     font-size: 16px;
     font-weight: 200;
   }
@@ -444,7 +447,11 @@ a:focus {
     margin: 0;
   }
 
+
+
   /* TWEE ARTIKELEN NAAST ELKAAR */
+
+
 
   .home main article:nth-of-type(1) {
     margin-top: 5em;
@@ -490,11 +497,9 @@ a:focus {
     color: var(--font-zwart);
     font-size: 16px;
     font-weight: 400;
-    background-image: linear-gradient(
-      90deg,
-      var(--button-color2) 50%,
-      var(--button-hover) 50%
-    );
+    background-image: linear-gradient(90deg,
+        var(--button-color2) 50%,
+        var(--button-hover) 50%);
     background-size: 200% 100%;
     transition: 0.3s;
     outline: none;
@@ -524,7 +529,11 @@ a:focus {
     list-style: none;
   }
 
+
+
   /* TWEEDE CARROUSEL */
+
+
 
   .home main section:nth-of-type(4) {
     margin: 5em 1em 1em 1em;
@@ -564,7 +573,7 @@ a:focus {
     font-weight: 400;
   }
 
-  .home main section:nth-of-type(4) h4 ~ p {
+  .home main section:nth-of-type(4) h4~p {
     font-size: 16px;
     font-weight: 200;
   }
@@ -578,7 +587,13 @@ a:focus {
     margin: 0;
   }
 
-  /* 5e section */
+
+
+
+  /* FORTNITE */
+
+
+
 
   .home main section:nth-of-type(5) {
     margin: 5em 1em 0 1em;
@@ -614,11 +629,9 @@ a:focus {
     color: var(--font-zwart);
     font-size: 16px;
     font-weight: 400;
-    background-image: linear-gradient(
-      90deg,
-      var(--button-color2) 50%,
-      var(--button-hover) 50%
-    );
+    background-image: linear-gradient(90deg,
+        var(--button-color2) 50%,
+        var(--button-hover) 50%);
     background-size: 200% 100%;
     transition: 0.3s;
     outline: none;
@@ -636,7 +649,11 @@ a:focus {
     color: var(--font-wit);
   }
 
-  /* TWEEDE ARTIKEL  */
+
+
+
+
+  /* HARDLOPEN  */
 
   .home main article:nth-of-type(2) {
     margin-top: 5em;
@@ -682,11 +699,9 @@ a:focus {
     color: var(--font-zwart);
     font-size: 16px;
     font-weight: 400;
-    background-image: linear-gradient(
-      90deg,
-      var(--button-color2) 50%,
-      var(--button-hover) 50%
-    );
+    background-image: linear-gradient(90deg,
+        var(--button-color2) 50%,
+        var(--button-hover) 50%);
     background-size: 200% 100%;
     transition: 0.3s;
     outline: none;
@@ -715,7 +730,12 @@ a:focus {
     list-style: none;
   }
 
-  /* Zesde section  */
+
+
+  /* NIKE FASHION  */
+
+
+
 
   .home main section:nth-of-type(6) {
     margin: 5em 1em;
@@ -757,11 +777,9 @@ a:focus {
     left: 1em;
 
     padding: 0.5em 1.75em;
-    background-image: linear-gradient(
-      90deg,
-      var(--button-color1) 50%,
-      var(--button-hover) 50%
-    );
+    background-image: linear-gradient(90deg,
+        var(--button-color1) 50%,
+        var(--button-hover) 50%);
     background-size: 200% 100%;
     transition: 0.3s;
     outline: none;
@@ -778,7 +796,14 @@ a:focus {
     color: var(--font-wit);
   }
 
-  /* FOOTER  */
+
+
+
+
+
+  /* FOOTER MOBIEL */
+
+
 
   .home footer {
     background-color: var(--font-zwart);
@@ -935,7 +960,7 @@ a:focus {
 
 
 @media (min-width: 64em) {
-  .home header a > svg {
+  .home header a>svg {
     margin: 0;
     padding: 0 0 0 0.5rem;
     width: 4em;
@@ -946,7 +971,7 @@ a:focus {
     z-index: 150;
   }
 
-  .home header a > svg:hover {
+  .home header a>svg:hover {
     fill: var(--button-hover);
   }
 
@@ -1096,7 +1121,7 @@ a:focus {
     color: var(--font-wit);
   }
 
-  .home main section:nth-of-type(2) > div {
+  .home main section:nth-of-type(2)>div {
     position: absolute;
     left: 1em;
     bottom: 1em;
@@ -1140,7 +1165,7 @@ a:focus {
     width: 50%;
   }
 
-  /* 5e section */
+  /* FORTNITE */
 
   .home main section:nth-of-type(5) {
     margin: 5em 3em;
@@ -1200,6 +1225,9 @@ a:focus {
     height: auto;
   }
 
+
+  
+
   .home main section:nth-of-type(6) ul li a {
     bottom: 11.5em;
   }
@@ -1219,6 +1247,8 @@ a:focus {
   .home footer section:nth-of-type(4) {
     display: none;
   }
+
+
 
   /* FOOTER DESKTOP */
   .home footer {
@@ -1319,12 +1349,11 @@ a:focus {
 
 
 
-
 /* DESKTOP */
 
 
 @media (min-width: 120em) {
-  .home header a > svg {
+  .home header a>svg {
     margin: 0;
     padding: 0 0 0 0.5rem;
     width: 4em;
@@ -1335,7 +1364,7 @@ a:focus {
     z-index: 150;
   }
 
-  .home header a > svg:hover {
+  .home header a>svg:hover {
     fill: var(--button-hover);
   }
 
@@ -1371,7 +1400,7 @@ a:focus {
   }
 
 
-  
+
 
   /* 4e NAV */
 
@@ -1460,7 +1489,7 @@ a:focus {
 
 
 
-/* 6e section */
+  /* 6e section */
 
 
   .home main section:nth-of-type(6) {
@@ -1486,7 +1515,7 @@ a:focus {
 
 
 
-   /* FOOTER DESKTOP */
+  /* FOOTER DESKTOP */
 
   .home footer section:nth-of-type(2) {
     display: none;
